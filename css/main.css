@@ -1,58 +1,96 @@
+/* GENERAL /////////////////////////////////////////////// */
+
 body {
   background-image: url('../img/bg-pattern.svg');
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  background: linear-gradient(rgb(45, 141, 201, 0.5), rgb(45, 141, 201, 1)), url('../img/bg-header2.jpg') no-repeat center/cover;
-  color: #fff;
-  height: 70vh;
-  position: relative;
-}
+/* HEADER ///////////////////////////////////////////// */
 
-header::before {
-  background: url('../img/header-top-edge.png') no-repeat center/100% 100%;
-  content: '';
-  height: 90px;
-  position: absolute;
-  top: 0;
-  width: 100%;
+header {
+  align-items: center;
+  background: linear-gradient(rgba(14, 67, 109, 0.6), rgb(14, 67, 109, 1)), url('../img/bg-header.jpg') no-repeat center/cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-around;
+  position: relative;
 }
 
 header::after {
   background: url('../img/header-bottom-edge.png') no-repeat center/100% 100%;
   content: '';
-  height: 147px;
+  height: 74px;
   position: absolute;
-  top: 70vh;
+  top: 90vh;
   width: 100%;
 }
 
-nav {
-  padding: 1rem 0;
-}
+/* NAV BAR */
 
-
-
-ul {
+nav ul {
   display: flex;
   font-size: 0.75rem;
   justify-content: center;
+  padding: 1rem;
 }
 
-li:last-child {
-  color: #ffca3a;
-}
-
-li {
-  display: inline;
+nav li {
   margin-right: 3rem;
 }
 
-.headings {
+nav li:last-child {
+  color: #ffca3a;
+  margin-right: 0;
+}
 
+/* NAV BAR END */
+
+.headings {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1.25rem;
+  text-align: center;
+  word-spacing: -0.25rem;
 }
 
 .headings span {
   color: #FFCA3A;
 }
+
+.headings p {
+  margin-bottom: 1rem;;
+}
+
+.headings p:nth-of-type(1) span {
+  font-size: 1.75rem;
+}
+
+.headings p:nth-of-type(2) span {
+  font-size: 2rem;
+}
+
+.headings p:nth-of-type(3) span {
+  font-size: 1.5rem;
+}
+
+header i {
+  animation: bounce 0.5s ease-in infinite alternate;
+  color: #fff;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+
+/* HEADER END ////////////////////////////////////////// */
+
+/* ABOUT /////////////////////////////////////////////// */
+
+  .about {
+    background-color: #EAF3F9;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.2);
+    height: 80vh;
+    margin: auto;
+    width: 80vw;
+  }
+
+/* ABOUT END /////////////////////////////////////////////// */
