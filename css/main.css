@@ -1,0 +1,58 @@
+body {
+  background-image: url('../img/bg-pattern.svg');
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background: linear-gradient(rgb(45, 141, 201, 0.5), rgb(45, 141, 201, 1)), url('../img/bg-header2.jpg') no-repeat center/cover;
+  color: #fff;
+  height: 70vh;
+  position: relative;
+}
+
+header::before {
+  background: url('../img/header-top-edge.png') no-repeat center/100% 100%;
+  content: '';
+  height: 90px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header::after {
+  background: url('../img/header-bottom-edge.png') no-repeat center/100% 100%;
+  content: '';
+  height: 147px;
+  position: absolute;
+  top: 70vh;
+  width: 100%;
+}
+
+nav {
+  padding: 1rem 0;
+}
+
+
+
+ul {
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: center;
+}
+
+li:last-child {
+  color: #ffca3a;
+}
+
+li {
+  display: inline;
+  margin-right: 3rem;
+}
+
+.headings {
+
+}
+
+.headings span {
+  color: #FFCA3A;
+}
