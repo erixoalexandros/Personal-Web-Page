@@ -81,11 +81,11 @@
 }
 
 @keyframes getAttention {
-  0%, 100% {
+  0%, 5%, 10%, 15%, 20%, 25%, 100%{
     transform: rotate(0deg);
   }
 
-  50% {
+  2.5%, 7.5%, 12.5%, 17.5%, 22.5% {
     transform: rotate(15deg);
   }
 }

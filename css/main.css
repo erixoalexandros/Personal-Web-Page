@@ -1,20 +1,25 @@
 /* GENERAL /////////////////////////////////////////////// */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('../img/bg-pattern.svg');
-  font-family: 'Play', sans-serif;
+  color: #0E476B;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER ///////////////////////////////////////////// */
 
 header {
   align-items: center;
-  background: linear-gradient(rgba(14, 67, 109, 0.6), rgb(14, 67, 109, 1)), url('../img/bg-header.jpg') no-repeat center/cover;
+  background: #1488cc;
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  justify-content: space-around;
+  height: 70vh;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -23,7 +28,7 @@ header::after {
   content: '';
   height: 74px;
   position: absolute;
-  top: 80vh;
+  top: 70vh;
   width: 100%;
 }
 
@@ -31,7 +36,7 @@ header::after {
 
 nav {
   animation: fadeInDown 2s 5s both;
-  overflow: hidden;
+  margin-top: 1.5rem;
   width: 100%;
 }
 
@@ -49,12 +54,12 @@ nav li {
 nav li:hover {
   color:  #FFCA3A;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.5s;
   user-select: none;
 }
 
 .fa-phone {
-  animation: getAttention 0.5s 8s infinite forwards; 
+  animation: getAttention 4s 8s infinite forwards;
 }
 
 nav i {
@@ -62,6 +67,8 @@ nav i {
 }
 
 /* NAV BAR END */
+
+/* HEADINGS */
 
 .headings {
   align-items: center;
@@ -103,6 +110,9 @@ nav i {
   animation: toYellow 1s 4.6s forwards;
 }
 
+/* HEADINGS END */
+
+/* DOWN ARROW ICON  */
 
 header .fa-angle-down {
   animation: bounce 0.5s ease-in 7s infinite alternate;
@@ -111,16 +121,65 @@ header .fa-angle-down {
   opacity: 0;
 }
 
+/* DOWN ARROW END */
+
 /* HEADER END ////////////////////////////////////////// */
 
 /* ABOUT /////////////////////////////////////////////// */
 
   .about {
+    align-items: center;
     background-color: #EAF3F9;
     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.2);
-    height: 80vh;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
+    padding: 100px 0 100px 10vw;
     width: 80vw;
   }
 
+  .about h2 {
+    color: #1982C4;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .about p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about img {
+    width: 40vw;
+  }
+
 /* ABOUT END /////////////////////////////////////////////// */
+
+/* SKILLS /////////////////////////////////////////////// */
+
+.skills {
+  background-color: #6A4C93;
+  height: 60vh;
+  position: relative;
+}
+
+.skills::before {
+  background: url('../img/skills-top-edge.png') no-repeat center/100% 100%;
+  content: '';
+  height: 74px;
+  position: absolute;
+  top: -74px;
+  width: 100%;
+}
+
+.skills::after {
+  background: url('../img/skills-bottom-edge.png') no-repeat center/100% 100%;
+  content: '';
+  height: 74px;
+  position: absolute;
+  top: 60vh;
+  width: 100%;
+}
+
+/* SKILLS END /////////////////////////////////////////////// */
