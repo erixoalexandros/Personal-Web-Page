@@ -18,7 +18,7 @@
   }
 
   to {
-    width: 11rem;
+    width: 12rem;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   to {
-    width: 22rem;
+    width: 26rem;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   to {
-    width: 28rem;
+    width: 30rem;
   }
 }
 
@@ -87,5 +87,17 @@
 
   2.5%, 7.5%, 12.5%, 17.5%, 22.5% {
     transform: rotate(15deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
   }
 }

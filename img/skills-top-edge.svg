@@ -15,8 +15,8 @@
    version="1.1"
    id="svg1625"
    sodipodi:docname="skills-top-edge.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   inkscape:export-filename="C:\Test\img\skillls-top-edge.png"
+   inkscape:version="0.92.3 (unknown)"
+   inkscape:export-filename="/home/erixo/Desktop/Personal-Web-Page/img/skills-top-edge.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -160,10 +160,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1280"
-     inkscape:window-height="958"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="960"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -183,7 +183,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -193,7 +193,7 @@
      id="layer1"
      transform="translate(0,-130.15682)">
     <path
-       style="opacity:1;vector-effect:none;fill:#ff595e;fill-opacity:1;stroke:none;stroke-width:14.75887299;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
+       style="opacity:1;vector-effect:none;fill:#1488cc;fill-opacity:1;stroke:none;stroke-width:14.75887299;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,147.41582 c 171.81172,-9.25827 341.02575,-15.59002 508,-6.77744 l -2e-5,6.77744 z"
        id="rect2318"
        inkscape:connector-curvature="0"
@@ -201,13 +201,13 @@
     <g
        id="g2337"
        transform="matrix(0.99999993,0,0,0.56923198,0,113.90229)"
-       style="fill:#6a4c93;fill-opacity:1;">
+       style="fill:#ffca3a;fill-opacity:1">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="rect2316"
          d="m 0,58.874985 c 164.69766,-30.839044 333.62486,-32.648075 508,0 l 10e-6,10.58326 H 7.9999921e-6 Z"
-         style="opacity:1;vector-effect:none;fill:#6a4c93;fill-opacity:1;stroke:none;stroke-width:19.56179428;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;" />
+         style="opacity:1;vector-effect:none;fill:#ffca3a;fill-opacity:1;stroke:none;stroke-width:19.56179428;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>
