@@ -163,7 +163,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:creator>
           <cc:Agent>
             <dc:title>Erick Jordan</dc:title>
@@ -184,13 +184,13 @@
      transform="translate(177.80002,-116.02529)">
     <path
        inkscape:connector-curvature="0"
-       style="opacity:0.6;vector-effect:none;fill:#137cba;fill-opacity:1;stroke:none;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.75;vector-effect:none;fill:#137cba;fill-opacity:1;stroke:none;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m -51.06301,132.16693 c -42.33271,0.0236 -84.57775,3.30987 -126.73699,9.78855 v 9.78855 c 69.00463,-13.09712 131.86978,-17.25175 191.72321,-17.04392 -21.68514,-1.70253 -43.34716,-2.54523 -64.98622,-2.53318 z m 381.26308,9.78855 c -9.17855,1.44522 -18.31668,2.72164 -27.41642,3.83542 12.12192,1.5203 21.61681,3.45176 27.41642,5.95313 z"
        id="rect845"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="opacity:0.6;vector-effect:none;fill:#1170a7;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.75;vector-effect:none;fill:#1170a7;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,0 v 98.003906 c 318.68399,-48.972654 638.66486,-49.685019 960,0 C 1118.5246,121.72246 1279.5618,134.87603 1443.6992,135 h 4.8672 C 1602.8071,134.87421 1759.7882,123.23025 1920,98.003906 V 0 Z"
        transform="matrix(0.26458337,0,0,0.26458337,-177.80002,116.02529)"
        id="rect841"

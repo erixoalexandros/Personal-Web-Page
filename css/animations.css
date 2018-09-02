@@ -18,7 +18,7 @@
   }
 
   to {
-    width: 12rem;
+    width: 9rem;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   to {
-    width: 26rem;
+    width: 20rem;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   to {
-    width: 30rem;
+    width: 23rem;
   }
 }
 
@@ -51,22 +51,6 @@
     color: #FFCA3A;
   }
 }
-
-/* .headings span {
-  color: #FFCA3A;
-}
-
-.headings p:nth-of-type(1) span {
-  font-size: 1.75rem;
-}
-
-.headings p:nth-of-type(2) span {
-  font-size: 2rem;
-}
-
-.headings p:nth-of-type(3) span {
-  font-size: 1.5rem;
-} */
 
 @keyframes fadeInDown {
   0% {
@@ -99,5 +83,16 @@
   to {
     opacity: 1;
     transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 1;
   }
 }
