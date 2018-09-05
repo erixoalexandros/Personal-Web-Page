@@ -2,15 +2,11 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 10%;
   overflow: hidden;
   position: relative;
-  width: 35%;
-  z-index: 1;
 }
 
 .static {
-  height: auto;
   width: 100%;
 }
 
