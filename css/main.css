@@ -5,8 +5,9 @@
 }
 
 body {
-  background-attachment: fixed;
-  background-image: url('../img/bg-pattern2.png');
+  /* background-attachment: fixed;
+  background-image: url('../img/bg-pattern2.png'); */
+  background-color: #0E476B;
   color: #0E476B;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
@@ -23,12 +24,13 @@ body {
 
 header {
   background: #1489CC;
+  background: linear-gradient(#ffffff00, #1489CC), url('../img/bg-pattern2.png');
   color: #fff;
   position: relative;
 }
 
 header::before {
-  background: url('../img/header-top-edge.png') no-repeat center/cover;
+  background: url('../img/header-top-edge.png') no-repeat center/100% 100%;
   content: '';
   height: 135px;
   position: absolute;
@@ -37,11 +39,11 @@ header::before {
 }
 
 header::after {
-  background: url('../img/header-bottom-edge.png') no-repeat center/cover;
+  background: url('../img/header-bottom-edge.png') no-repeat center/100% 100%;
   content: '';
   height: 74px;
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   width: 100%;
 }
 
@@ -51,9 +53,12 @@ nav {
   color: #fff;
   display: flex;
   font-size: 0.8rem;
+  font-weight: 300;
   height: 10vh;
   justify-content: flex-end;
+  margin: auto;
   text-align: center;
+  width: 80%;
 }
 
 nav ul {
@@ -69,8 +74,12 @@ nav li {
   z-index: 1;
 }
 
+nav li:last-child {
+  margin-right: 0;
+}
+
 nav li:hover {
-  color:  #FFCA3A;
+  color: #FFCA3A;
   transition: 0.2s;
 }
 
@@ -82,26 +91,27 @@ nav i {
 
 .header-main-content {
   display: flex;
-  height: 60vh;
+  height: 50vh;
   margin: auto;
   width: 80%;
 }
 
 .header-image-container {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 50%;
 }
 
 .header-image-container img {
-  transform: rotate(5deg);
-  width: 80%;
+  border: 0.5rem solid #FFCA3A;
+  box-shadow: 0px 21px 52px -5px rgba(0,0,0,0.45);
+  width: 50%;
   z-index: 1;
 }
 
 .header-headings-container {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,32 +119,20 @@ nav i {
 }
 
 .header-headings-container p {
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   font-weight: 300;
   height: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .header-headings-container span {
   color: #FFD86F;
 }
 
-.header-headings-container p:nth-of-type(1) span {
-  font-size: 2rem;
-}
-
-.header-headings-container p:nth-of-type(2) span {
-  font-size: 2.25rem;
-}
-
-.header-headings-container p:nth-of-type(3) span {
-  font-size: 1.75rem;
-}
-
 .header-headings-container button {
   background-color: #FFCA3A;
   border: 2px solid transparent;
-  border-radius: 2rem;
+  box-shadow: 0px 21px 52px -5px rgba(0,0,0,0.45);
   color: #0E476B;
   cursor: pointer;
   font-size: 1rem;
@@ -144,7 +142,6 @@ nav i {
 }
 
 .header-headings-container button:hover {
-  background-color: #FFDD81;
   color: #0E476B;
   padding: 0.75rem 2rem;
 }
@@ -203,7 +200,9 @@ nav i {
   }
 
   .about-image-container img {
-    width: 70%;
+    border: 0.5rem solid #1982C4;
+    box-shadow: 0px 21px 52px -5px rgba(0,0,0,0.45);
+    width: 60%;
   }
 
 /* ABOUT END /////////////////////////////////////////////// */
@@ -234,8 +233,10 @@ nav i {
 }
 
 .skills-card {
+  cursor: col-resize;
   display: flex;
   flex: 1;
+  user-select: none;
 }
 
 .skills-card ul {
@@ -259,7 +260,7 @@ nav i {
   margin-right: 0;
 }
 
-.skills-card ul:active {
+.skills-card ul:hover {
   background-color: #fff;
   background-image: none;
   border-radius: 0;
@@ -281,17 +282,20 @@ nav i {
   background-color: #8AC926;
   background-image: url('../img/skills-graphics.svg');
   color: #0E476B;
+  margin-top: 2rem;
 }
 
 .skill-card-tools {
   background-color: #FFCA3A;
   background-image: url('../img/skills-tools.svg');
   color: #0E476B;
+  margin-top: 4rem;
 }
 
 .skill-card-personal {
   background-color: #FF595E;
   background-image: url('../img/skills-personal.svg');
+  margin-top: 6rem;
 }
 
 /* SKILLS END /////////////////////////////////////////////// */
