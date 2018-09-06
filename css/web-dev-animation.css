@@ -4,6 +4,7 @@
   justify-content: center;
   margin: auto;
   position: relative;
+  overflow: hidden;
   width: 50%;
 }
 
