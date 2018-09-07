@@ -16,7 +16,7 @@
    version="1.1"
    id="svg4"
    sodipodi:docname="skills-personal.svg"
-   inkscape:version="0.92.3 (unknown)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -39,20 +39,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="960"
+     inkscape:window-width="1280"
+     inkscape:window-height="958"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="-509.15254"
+     inkscape:cx="-216.27119"
      inkscape:cy="256"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4" />
   <path
      fill="currentColor"
      d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm194.8 170.2C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.6-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.4-16.2 38.1 4.2 24.6 20.5z"
      id="path2"
-     style="fill:#1488cc;fill-opacity:1" />
+     style="fill:#ff595e;fill-opacity:1" />
 </svg>

@@ -16,7 +16,7 @@
    version="1.1"
    id="svg4"
    sodipodi:docname="skills-graphics.svg"
-   inkscape:version="0.92.3 (unknown)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -39,20 +39,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="960"
+     inkscape:window-width="1280"
+     inkscape:window-height="958"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="-501.15254"
+     inkscape:cx="-276.06081"
      inkscape:cy="256"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4" />
   <path
      fill="currentColor"
      d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
      id="path2"
-     style="fill:#1488cc;fill-opacity:1" />
+     style="fill:#ff595e;fill-opacity:1" />
 </svg>
