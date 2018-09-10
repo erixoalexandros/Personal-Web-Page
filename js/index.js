@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
   const skills = document.getElementById('skills');
   const experience = document.getElementById('experience');
   const education = document.getElementById('education');
-  const skillsContainer = Array.from(document.getElementById('skills-container').children);
 
   this.addEventListener('scroll', () => {
 
@@ -52,20 +51,6 @@ window.addEventListener('load', () => {
         navListItems[2].classList.remove('current-section');
       }
     }
-
-  });
-
-  skillsContainer.forEach(cardContainer => {
-
-    const card = cardContainer.firstElementChild;
-
-    card.addEventListener('click', function() {
-      if (!card.classList.contains('flipped-card')) {
-        card.classList.add('flipped-card');
-      } else {
-        card.classList.remove('flipped-card');
-      }
-    });
 
   });
 
