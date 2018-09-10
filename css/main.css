@@ -6,18 +6,26 @@
 
 body {
   background-color: #0E476B;
-  color: #0E476B;
-  font-family: 'Roboto', sans-serif;
-  text-rendering: optimizeLegibility;
 }
 
 .wrapper {
   background-color: #EAF3F9;
   color: #0E476B;
   box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: auto;
+  position: relative;
+  text-rendering: optimizeLegibility;
   width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
 }
 
 /* HEADER ///////////////////////////////////////////// */
@@ -50,30 +58,30 @@ header::after {
 /* NAV BAR */
 
 nav {
+  color: #fff;
   display: flex;
   font-size: 0.8rem;
-  height: 10vh;
-  justify-content: flex-end;
-  margin: auto;
+  justify-content: center;
+  min-height: 67px;
+  position: absolute;
   text-align: center;
-  width: 80%;
+  width: 100%;
+  z-index: 1;
 }
 
 nav ul {
   align-items: center;
   display: flex;
+  justify-content: flex-end;
+  width: 80%;
 }
 
 nav li {
   cursor: pointer;
-  margin-right: 2.5rem;
-  transition: 0.4s;
+  margin-left: 2.5rem;
+  transition: 0.2s;
   user-select: none;
   z-index: 1;
-}
-
-nav li:last-child {
-  margin-right: 0;
 }
 
 nav li:hover {
@@ -88,7 +96,7 @@ nav i {
 
 .header-main-content {
   display: flex;
-  height: 50vh;
+  height: 60vh;
   margin: auto;
   width: 80%;
 }
@@ -143,7 +151,7 @@ nav i {
 
 /* ABOUT /////////////////////////////////////////////// */
 
-  .about {
+  #about {
     display: flex;
     margin: auto;
     padding-top: 20vh;
@@ -163,20 +171,21 @@ nav i {
     width: 60%;
   }
 
-  .about article {
+  #about article {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
   }
 
-  .about h2 {
+  #about h2 {
     color: #1489CC;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
-  .about p {
+  #about p {
     font-size: 1.25rem;
     line-height: 2rem;
     margin-bottom: 2rem;
@@ -186,13 +195,13 @@ nav i {
 
 /* SKILLS /////////////////////////////////////////////// */
 
-.skills {
+#skills {
   background-color: #1489CC;
   background: linear-gradient(#0E476B, #1489CC);
   position: relative;
 }
 
-.skills::before {
+#skills::before {
   background: url('../img/skills-top-edge.png') no-repeat center/cover;
   content: '';
   height: 74px;
@@ -201,48 +210,50 @@ nav i {
   width: 100%;
 }
 
-.skills::after {
+#skills::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   content: '';
   height: 74px;
   position: absolute;
-  top: 50vh;
+  top: 60vh;
   width: 100%;
 }
 
 .skills-content {
-  height: 50vh;
+  height: 60vh;
   margin: auto;
   width: 80%;
 }
 
-.skills h2 {
+#skills h2 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.skills-container {
+#skills-container {
   display: flex;
   height: 50%;
   justify-content: space-between;
   width: 100%;
 }
 
-.skills-card {
+.skills-card-container {
+  color: #FFCA3A;
   cursor: col-resize;
   user-select: none;
   width: 20%;
+  z-index: 1;
 }
 
-.skills-card ul {
+.skill-card {
   background-color: #FFCA3A;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20% 20%;
   box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
-  height: 100%;
+  min-height: 350px;
 }
 
 .skill-card-web {
@@ -268,8 +279,67 @@ nav i {
 
 /* EXPERIENCE /////////////////////////////////////////////// */
 
-.experience {
-  height: 20vh;
+#experience {
+  height: 100vh;
 }
 
 /* EXPERIENCE END /////////////////////////////////////////////// */
+
+/* DYNAMIC CLASSES */
+
+.nav-fixed {
+  height: 100vh;
+  left: 90%;
+  opacity: 0.5;
+  position: fixed;
+  transition: 0.2s;
+  width: 10%;
+}
+
+.nav-fixed:hover {
+  opacity: 1;
+}
+
+.nav-fixed ul {
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.nav-fixed li {
+  height: 2rem;
+  margin-left: 0;
+}
+
+.current-section i {
+  font-size: 2rem;
+}
+
+.flipped-card {
+  background-color: #EAF3F9;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: space-evenly;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flipped-card li {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.flipped-card li:nth-child(odd) {
+  background-color: #0E476B;
+  color: #fff;
+}
+
+.flipped-card li:nth-child(even) {
+  background-color: #EAF3F9;
+  color: #0E476B;
+}
