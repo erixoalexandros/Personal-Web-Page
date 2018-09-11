@@ -29,6 +29,11 @@ a:visited {
   color: #fff;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* HEADER ///////////////////////////////////////////// */
 
 header {
@@ -186,8 +191,6 @@ nav i {
 
   #about h2 {
     color: #1489CC;
-    font-size: 2rem;
-    margin-bottom: 2rem;
   }
 
   #about p {
@@ -226,9 +229,7 @@ nav i {
 
 #skills h2 {
   color: #fff;
-  font-size: 2rem;
-  margin: auto;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   width: 80%;
 }
 
@@ -327,7 +328,9 @@ nav i {
 /* EXPERIENCE /////////////////////////////////////////////// */
 
 #experience {
-  height: 100vh;
+  margin: auto;
+  padding: 20vh 0;
+  width: 80%;
 }
 
 /* EXPERIENCE END /////////////////////////////////////////////// */
@@ -363,26 +366,3 @@ nav i {
   font-size: 2rem;
 }
 
-/* .flipped-card {
-  background-color: #ffda7f;
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-}
-
-.flipped-card li {
-  padding: 0.5rem;
-  width: 100%;
-}
-
-.flipped-card li:nth-child(odd) {
-  background-color: #0E476B;
-  color: #ffda7f;
-}
-
-.flipped-card li:nth-child(even) {
-  color: #0E476B;
-} */
