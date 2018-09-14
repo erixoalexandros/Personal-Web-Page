@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
 
   this.addEventListener('scroll', () => {
 
-    if (window.scrollY > 67) {
+    if (window.scrollY > 100) {
       if (!nav.classList.contains('nav-fixed')) {
         nav.classList.add('nav-fixed');
       }
