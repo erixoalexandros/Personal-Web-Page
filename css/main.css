@@ -12,10 +12,13 @@ body {
 }
 
 .wrapper {
+  background-attachment: fixed;
   background-color: #EAF3F9;
+  background-image: url('../img/bg-pattern.svg');
   color: #0E476B;
-  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
   margin: auto;
+  overflow: hidden;
   position: relative;
   width: 80%;
 }
@@ -36,8 +39,9 @@ a:hover {
 }
 
 h2 {
+  color: #1489CC;
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /* NAV BAR */
@@ -76,7 +80,8 @@ nav i {
 /* HEADER ///////////////////////////////////////////// */
 
 header {
-  background: linear-gradient(#00000000, #1489CC), url('../img/bg-pattern2.png');
+  background-color: #1489CC;
+  background: linear-gradient(#0E476B, #1489CC);
   display: flex;
   color: #fff;
   height: 650px;
@@ -147,7 +152,7 @@ header::after {
 }
 
 .header-image-container img {
-  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
   width: 380px;
   z-index: 1;
 }
@@ -156,66 +161,61 @@ header::after {
 
 /* ABOUT /////////////////////////////////////////////// */
 
-  #about {
-    align-items: center;
-    background: linear-gradient(#EAF3F9, #00000000), url('../img/bg-pattern.svg');
-    display: flex;
-    flex-wrap: wrap;
-    height: 1000px;
-    justify-content: center;
-    padding: 100px 0;
-    width: 100%;
-  }
+#about {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 1000px;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+}
 
-  .about-image-container {
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    width: 40%;
-  }
+.about-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
 
-  .about-image-container img {
-    box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
-    width: 380px;
-  }
+.about-image-container img {
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
+  width: 380px;
+}
 
-  #about article {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-  }
+#about article {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
 
-  #about h2 {
-    color: #1489CC;
-  }
+#about p {
+  font-size: 1.25rem;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
 
-  #about p {
-    font-size: 1.25rem;
-    line-height: 35px;
-    margin-bottom: 25px;
-  }
+#about p:last-child {
+  margin-bottom: 0;
+}
 
-  #about p:last-child {
-    margin-bottom: 0;
-  }
+#about span {
+  align-items: center;
+  display: flex;
+  color: #1489CC;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 100;
+}
 
-  #about span {
-    align-items: center;
-    display: flex;
-    color: #1489CC;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 100;
-  }
-
-  #about i {
-    color: #FF595E;
-    font-size: 5rem;
-    margin-right: 30px;
-    opacity: 0.3;
-  }
+#about i {
+  color: #FF595E;
+  font-size: 5rem;
+  margin-right: 30px;
+  opacity: 0.3;
+}
 
 /* ABOUT END /////////////////////////////////////////////// */
 
@@ -264,10 +264,9 @@ header::after {
 }
 
 .skills-card {
-  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
   cursor: col-resize;
   height: 360px;
-  min-width: 208px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
@@ -342,51 +341,50 @@ header::after {
 
 /* SKILLS END /////////////////////////////////////////////// */
 
-/* EXPERIENCE /////////////////////////////////////////////// */
+/* EDUCATION-EXPERIENCE /////////////////////////////////////////////// */
 
-#experience {
-  background: linear-gradient(#00000000, #EAF3F9), url('../img/bg-pattern.svg');
-  height: 500px;
+#education-experience {
+  height: 1200px;
   padding-top: 100px;
 }
 
-#experience h2 {
+#education-experience h2 {
   margin: 0 auto 50px auto;
   width: 80%;
 }
 
-.experience-workplaces-box {
-  align-items: center;
+.education-experience-boxes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
   width: 80%;
 }
 
-.experience-workplaces-box fieldset {
+.education-experience-boxes fieldset {
   background: linear-gradient(#3E9DD5, #1489CC);
   color: #fff;
-  height: 175px;
-  padding: 30px;
+  height: 165px;
+  padding: 20px;
   position: relative;
   text-align: right;
   text-transform: uppercase;
   width: 320px;
 }
 
-.experience-workplaces-box fieldset::after {
+.education-experience-boxes fieldset::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   content: '';
   height: 74px;
   position: absolute;
   left: 0;
-  top: 175px;
+  top: 165px;
   width: 100%;
 }
 
-.experience-workplaces-box legend {
+.education-experience-boxes legend {
   background: #FFCA3A;
-  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
   color: #0E476B;
   font-size: 1.25rem;
   padding: 10px 20px;
@@ -394,26 +392,45 @@ header::after {
   width: 218px;
 }
 
-.experience-workplaces-box legend:hover {
-  transform: scale(1.1);
-}
-
-#experience-future-box {
+.education-experience-boxes fieldset:nth-of-type(2) legend,
+.education-experience-boxes fieldset:nth-of-type(5) legend {
   background-color: #FF595E;
   color: #fff;
 }
 
-.experience-workplaces-box p {
+.education-experience-boxes legend:hover {
+  transform: scale(1.1);
+}
+
+.education-experience-boxes p {
   padding: 10px;
 }
 
-.experience-workplaces-box i {
+.education-experience-boxes i {
   color: #1489CC;
   font-size: 3rem;
-  margin-top: 36px;
+  margin-top: 60px;
 }
 
-/* EXPERIENCE END /////////////////////////////////////////////// */
+.fa-angle-double-down {
+  margin-right: calc(160px - 1.5rem);
+  padding: 40px 0;
+  text-align: right;
+  width: 100%;
+}
+
+.fas-right {
+  margin-left: calc(160px - 1.5rem);
+  text-align: left;
+}
+
+/* EDUCATION-EXPERIENCE END /////////////////////////////////////////////// */
+
+/* CONTACT /////////////////////////////////////////////// */
+
+
+
+/* CONTACT END /////////////////////////////////////////////// */
 
 /* DYNAMIC CLASSES */
 
@@ -436,6 +453,7 @@ header::after {
 }
 
 .nav-fixed li {
+  height: 50px;
   margin-left: 0;
 }
 

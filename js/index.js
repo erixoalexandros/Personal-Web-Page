@@ -4,8 +4,9 @@ window.addEventListener('load', () => {
   const navListItems = nav.firstElementChild.children;
   const about = document.getElementById('about');
   const skills = document.getElementById('skills');
+  const education = document.getElementById('education-experience');
   const experience = document.getElementById('experience');
-  const education = document.getElementById('education');
+  const contact = document.getElementById('contact');
 
   this.addEventListener('scroll', () => {
 
@@ -19,7 +20,7 @@ window.addEventListener('load', () => {
       }
     }
 
-    if (window.scrollY >= (about.offsetTop - 74) && window.scrollY < (skills.offsetTop - 200)) {
+    if (window.scrollY >= (about.offsetTop) && window.scrollY < (skills.offsetTop - 200)) {
 
       if (!navListItems[0].classList.contains('current-section')) {
         navListItems[0].classList.add('current-section');
@@ -30,7 +31,7 @@ window.addEventListener('load', () => {
       }
     }
 
-    if (window.scrollY >= (skills.offsetTop - 200) && window.scrollY < (experience.offsetTop - 200)) {
+    if (window.scrollY >= (skills.offsetTop - 200) && window.scrollY < (education.offsetTop)) {
 
       if (!navListItems[1].classList.contains('current-section')) {
         navListItems[1].classList.add('current-section');
@@ -41,7 +42,7 @@ window.addEventListener('load', () => {
       }
     }
 
-    if (window.scrollY >= (experience.offsetTop - 200) && window.scrollY < (education.offsetTop - 74)) {
+    if (window.scrollY >= (education.offsetTop) && window.scrollY < (experience.offsetTop - 100)) {
 
       if (!navListItems[2].classList.contains('current-section')) {
         navListItems[2].classList.add('current-section');
@@ -49,6 +50,17 @@ window.addEventListener('load', () => {
     } else {
       if (navListItems[2].classList.contains('current-section')) {
         navListItems[2].classList.remove('current-section');
+      }
+    }
+
+    if (window.scrollY >= (experience.offsetTop - 100) && window.scrollY < (contact.offsetTop)) {
+
+      if (!navListItems[3].classList.contains('current-section')) {
+        navListItems[3].classList.add('current-section');
+      }
+    } else {
+      if (navListItems[3].classList.contains('current-section')) {
+        navListItems[3].classList.remove('current-section');
       }
     }
 
