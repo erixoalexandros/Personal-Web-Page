@@ -21,6 +21,7 @@ body {
 }
 
 a {
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
   transition: color 0.2s;
@@ -156,11 +157,13 @@ header::after {
 /* ABOUT /////////////////////////////////////////////// */
 
   #about {
+    align-items: center;
     background: linear-gradient(#EAF3F9, #00000000), url('../img/bg-pattern.svg');
     display: flex;
-    height: 900px;
+    flex-wrap: wrap;
+    height: 1000px;
     justify-content: center;
-    margin: auto;
+    padding: 100px 0;
     width: 100%;
   }
 
@@ -198,6 +201,22 @@ header::after {
     margin-bottom: 0;
   }
 
+  #about span {
+    align-items: center;
+    display: flex;
+    color: #1489CC;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  #about i {
+    color: #FF595E;
+    font-size: 5rem;
+    margin-right: 30px;
+    opacity: 0.3;
+  }
+
 /* ABOUT END /////////////////////////////////////////////// */
 
 /* SKILLS /////////////////////////////////////////////// */
@@ -228,7 +247,7 @@ header::after {
 
 #skills h2 {
   color: #fff;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 50px auto;
   width: 80%;
 }
 
@@ -327,40 +346,71 @@ header::after {
 
 #experience {
   background: linear-gradient(#00000000, #EAF3F9), url('../img/bg-pattern.svg');
-  height: 100vh;
+  height: 500px;
   padding-top: 100px;
 }
 
 #experience h2 {
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 50px auto;
   width: 80%;
 }
 
-.experience-workplace-box {
+.experience-workplaces-box {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  margin: auto;
   justify-content: space-between;
+  margin: auto;
   width: 80%;
 }
 
-.experience-workplace-box fieldset {
-  /* border: 3px solid #1489CC; */
-  margin-bottom: 2rem;
-  padding: 1rem;
-  text-align: center;
-  width: 31%;
-  background: #FFCA3A;
-  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
+.experience-workplaces-box fieldset {
+  background: linear-gradient(#3E9DD5, #1489CC);
+  color: #fff;
+  height: 175px;
+  padding: 30px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+  width: 320px;
 }
 
-fieldset legend {
-  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.75);
-  background: #1489CC;
-  border: 3px solid #1489CC;
+.experience-workplaces-box fieldset::after {
+  background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
+  content: '';
+  height: 74px;
+  position: absolute;
+  left: 0;
+  top: 175px;
+  width: 100%;
+}
+
+.experience-workplaces-box legend {
+  background: #FFCA3A;
+  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.5);
+  color: #0E476B;
   font-size: 1.25rem;
-  padding: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+  width: 218px;
+}
+
+.experience-workplaces-box legend:hover {
+  transform: scale(1.1);
+}
+
+#experience-future-box {
+  background-color: #FF595E;
   color: #fff;
+}
+
+.experience-workplaces-box p {
+  padding: 10px;
+}
+
+.experience-workplaces-box i {
+  color: #1489CC;
+  font-size: 3rem;
+  margin-top: 36px;
 }
 
 /* EXPERIENCE END /////////////////////////////////////////////// */
