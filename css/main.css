@@ -81,7 +81,7 @@ nav i {
 
 header {
   background-color: #1489CC;
-  background: linear-gradient(#0E476B, #1489CC);
+  background: linear-gradient(#0E476B00, #1489CC), url('../img/bg-pattern2.png');
   display: flex;
   color: #fff;
   height: 650px;
@@ -341,27 +341,28 @@ header::after {
 
 /* SKILLS END /////////////////////////////////////////////// */
 
-/* EDUCATION-EXPERIENCE /////////////////////////////////////////////// */
+/* EXPERIENCE /////////////////////////////////////////////// */
 
-#education-experience {
+#experience {
   height: 1200px;
   padding-top: 100px;
 }
 
-#education-experience h2 {
+#experience h2 {
   margin: 0 auto 50px auto;
   width: 80%;
 }
 
-.education-experience-boxes {
+.experience-boxes {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
-  width: 80%;
+  margin-left: 10%;
+  width: 60%;
 }
 
-.education-experience-boxes fieldset {
+.experience-boxes fieldset {
   background: linear-gradient(#3E9DD5, #1489CC);
   color: #fff;
   height: 165px;
@@ -372,7 +373,7 @@ header::after {
   width: 320px;
 }
 
-.education-experience-boxes fieldset::after {
+.experience-boxes fieldset::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   content: '';
   height: 74px;
@@ -382,7 +383,7 @@ header::after {
   width: 100%;
 }
 
-.education-experience-boxes legend {
+.experience-boxes legend {
   background: #FFCA3A;
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
   color: #0E476B;
@@ -392,45 +393,38 @@ header::after {
   width: 218px;
 }
 
-.education-experience-boxes fieldset:nth-of-type(2) legend,
-.education-experience-boxes fieldset:nth-of-type(5) legend {
+.experience-boxes fieldset:nth-of-type(1) legend {
   background-color: #FF595E;
   color: #fff;
 }
 
-.education-experience-boxes legend:hover {
+.experience-boxes legend:hover {
   transform: scale(1.1);
 }
 
-.education-experience-boxes p {
+.experience-boxes p {
   padding: 10px;
 }
 
-.education-experience-boxes i {
+.experience-boxes i {
   color: #1489CC;
   font-size: 3rem;
-  margin-top: 60px;
 }
 
-.fa-angle-double-down {
+.fa-angle-double-up {
   margin-right: calc(160px - 1.5rem);
   padding: 40px 0;
   text-align: right;
   width: 100%;
 }
 
-.fas-right {
-  margin-left: calc(160px - 1.5rem);
-  text-align: left;
-}
+/* EXPERIENCE END /////////////////////////////////////////////// */
 
-/* EDUCATION-EXPERIENCE END /////////////////////////////////////////////// */
-
-/* CONTACT /////////////////////////////////////////////// */
+/* EDUCATION /////////////////////////////////////////////// */
 
 
 
-/* CONTACT END /////////////////////////////////////////////// */
+/* EDUCATION END /////////////////////////////////////////////// */
 
 /* DYNAMIC CLASSES */
 
