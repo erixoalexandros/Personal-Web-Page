@@ -11,8 +11,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.wrapper {
-  background-attachment: fixed;
+#wrapper {
   background-color: #EAF3F9;
   background-image: url('../img/bg-pattern.svg');
   color: #0E476B;
@@ -205,14 +204,15 @@ header::after {
   align-items: center;
   display: flex;
   color: #1489CC;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 100;
+  width: 80%;
 }
 
 #about i {
   color: #FF595E;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-right: 30px;
   opacity: 0.3;
 }
@@ -222,7 +222,7 @@ header::after {
 /* SKILLS /////////////////////////////////////////////// */
 
 #skills {
-  background: linear-gradient(#0E476B, #1489CC);
+  background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
   height: 500px;
   position: relative;
 }
@@ -344,7 +344,7 @@ header::after {
 /* EXPERIENCE /////////////////////////////////////////////// */
 
 #experience {
-  height: 1200px;
+  height: 800px;
   padding-top: 100px;
 }
 
@@ -453,4 +453,12 @@ header::after {
 
 .current-section i {
   font-size: 1.5rem;
+}
+
+#right-arrow {
+  left: 95%;
+  opacity: 0.5;
+  position: fixed;
+  top: calc(50% - 21px);
+  z-index: 999;
 }

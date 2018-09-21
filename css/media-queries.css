@@ -1,0 +1,27 @@
+@media all and (max-width: 1500px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  .experience-boxes {
+    margin-left: 10%;
+    width: 66%;
+  }
+
+  .nav-fixed {
+    background-image: url('../img/bg-pattern2.png');
+    left: 95%;
+    opacity: 0;
+    transition: left 0.5s,
+      background 0.5s,
+      box-shadow 0.5s;
+    z-index: 1000;
+  }
+
+  .nav-fixed:hover {
+    left: 90%;
+  }
+
+}
+
+@media all and (max-width: 1200px) {}
