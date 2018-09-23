@@ -13,11 +13,12 @@ window.addEventListener('load', () => {
 
   this.addEventListener('scroll', () => {//When scroll
 
-    if (window.scrollY > 100) {//When nav bar is not visible at the top
+    if (scrollY > 100) {//When nav bar is not visible at the top
 
       // Add Right Arrow if screen -1500px wide and doesn't exist
-      if (screen.width <= 1500 && wrapper.lastElementChild.id !== 'right-arrow') {
-        wrapper.insertAdjacentHTML('beforeend', '<img id="right-arrow" src="img/right-arrow.svg" alt="Right-Arrow">');
+      if (innerWidth <= 1500 && wrapper.lastElementChild.id !== 'right-arrow') {
+        console.log();
+        wrapper.insertAdjacentHTML('beforeend', '<img id="right-arrow" src="img/right-arrow.svg" alt="Right Arrow">');
       }
       
       if (!nav.classList.contains('nav-fixed')) {//Fix the nav bar to the right

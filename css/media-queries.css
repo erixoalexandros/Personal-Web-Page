@@ -1,5 +1,7 @@
 @media all and (max-width: 1500px) {
+
   #wrapper {
+    box-shadow: none;
     width: 100%;
   }
 
@@ -24,4 +26,179 @@
 
 }
 
-@media all and (max-width: 1200px) {}
+/*//////////////////////////////////////*/
+
+@media all and (max-width: 1200px) {
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  nav {
+    font-size: 0.6rem;
+  }
+
+  header {
+    height: 530px;
+  }
+
+  header::after {
+    top: 530px;
+  }
+
+  .header-headings-container {
+    font-size: 1.25rem;
+  }
+
+  .header-headings-container button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .header-image-container img {
+    box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
+    width: 300px;
+    z-index: 1;
+  }
+
+  #about {
+    height: 800px;
+  }
+
+  .about-image-container img {
+    width: 300px;
+  }
+
+  #about p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  #about span {
+    font-size: 1.8rem;
+  }
+  
+  #about i {
+    font-size: 3rem;
+  }
+
+  #skills {
+    height: 320px;
+  }
+
+  #skills::after {
+    top: 320px;
+  }
+
+  #skills h2 {
+    margin-bottom: 25px;
+  }
+
+  .skills-card-wrapper {
+    width: 20%;
+  }
+
+  .skills-card {
+    height: 220px;
+  }
+
+  .skills-card-back {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .skills-card-back li {
+    padding: 4px;
+  }
+
+  #experience {
+    height: 750px;
+    padding-top: 100px;
+  }
+
+  #experience h2 {
+    margin-bottom: 25px;
+  }
+
+  .experience-boxes {
+    width: 80%;
+  }
+
+  .experience-boxes fieldset {
+    font-size: 0.8rem;
+    height: 140px;
+    padding: 10px;
+    width: 250px;
+  }
+
+  .experience-boxes fieldset::after {
+    top: 140px;
+  }
+
+  .experience-boxes legend {
+    font-size: 1rem;
+    padding: 7px 10px;
+    width: 150px;
+  }
+
+  .experience-boxes p {
+    padding: 10px;
+  }
+
+  .experience-boxes i {
+    font-size: 2rem;
+  }
+
+  .fa-angle-double-up {
+    margin-right: calc(125px - 1rem);
+    padding: 74px 0 45px 0;
+  }
+
+  .web-dev-animation {
+    width: 250px;
+  }
+  
+}
+
+/*//////////////////////////////////////*/
+
+@media all and (max-width: 900px) {
+
+  nav {
+    font-size: 0.6rem;
+    height: 70px;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  nav li {
+    margin-left: 0;
+  }
+  
+  nav i {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  header {
+    background-color: #1489CC;
+    background: linear-gradient(#0E476B00, #1489CC), url('../img/bg-pattern2.png');
+    display: flex;
+    color: #fff;
+    height: 650px;
+    justify-content: center;
+    position: relative;
+  }
+
+  header::after {
+    top: 650px;
+  }
+
+}
