@@ -262,6 +262,7 @@ header::after {
 .skills-card-wrapper {
   perspective: 1000px;
   width: 22%;
+  z-index: 1;
 }
 
 .skills-card {

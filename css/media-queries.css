@@ -125,7 +125,7 @@
   }
 
   .experience-boxes {
-    width: 80%;
+    width: 60%;
   }
 
   .experience-boxes fieldset {
@@ -166,6 +166,16 @@
 
 /*//////////////////////////////////////*/
 
+@media all and (max-width: 960px) {
+
+  .experience-boxes {
+    width: 70%;
+  }
+
+}
+
+/*//////////////////////////////////////*/
+
 @media all and (max-width: 900px) {
 
   nav {
@@ -175,7 +185,7 @@
 
   nav ul {
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
   }
 
   nav li {
@@ -188,17 +198,73 @@
   }
 
   header {
-    background-color: #1489CC;
-    background: linear-gradient(#0E476B00, #1489CC), url('../img/bg-pattern2.png');
-    display: flex;
-    color: #fff;
-    height: 650px;
-    justify-content: center;
-    position: relative;
+    height: 470px;
   }
 
   header::after {
-    top: 650px;
+    top: 470px;
+  }
+
+  .header-headings-container {
+    font-size: 1rem;
+  }
+
+  .header-image-container img {
+    width: 250px;
+  }
+
+  #about {
+    height: 700px;
+  }
+
+  .about-image-container img {
+    width: 250px;
+  }
+
+  #about p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  #about span {
+    font-size: 1.3rem;
+  }
+  
+  #about i {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+
+  #skills {
+    height: 350px;
+  }
+
+  #skills::after {
+    top: 350px;
+  }
+
+  #skills-container {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .skills-card-wrapper {
+    width: 23%;
+    
+  }
+
+  .skills-card {
+    height: 260px;
+  }
+
+  .skills-card-back {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .skills-card-back li {
+    padding: 6px;
   }
 
 }
