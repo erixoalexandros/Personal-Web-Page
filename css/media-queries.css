@@ -1,3 +1,11 @@
+@media all and (max-width: 1600px) {
+
+  .experience-boxes {
+    width: 70%;
+  }
+
+}
+
 @media all and (max-width: 1500px) {
 
   #wrapper {
@@ -31,12 +39,15 @@
 @media all and (max-width: 1200px) {
 
   h2 {
-    font-size: 1.5rem;
     margin-bottom: 25px;
   }
 
   nav {
-    font-size: 0.6rem;
+    height: 80px;
+  }
+
+  nav ul {
+    width: 90%;
   }
 
   header {
@@ -48,34 +59,36 @@
   }
 
   .header-headings-container {
-    font-size: 1.25rem;
+    width: 45%;
   }
 
-  .header-headings-container button {
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.8rem;
-    padding: 8px 16px;
+  .header-image-container {
+    width: 45%;
   }
 
   .header-image-container img {
-    box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
     width: 300px;
-    z-index: 1;
   }
 
   #about {
-    height: 800px;
+    height: 900px;
+  }
+
+  .about-image-container {
+    width: 45%;
   }
 
   .about-image-container img {
-    width: 300px;
+    width: 350px;
+  }
+
+  #about article {
+    width: 45%;
   }
 
   #about p {
-    font-size: 1rem;
-    line-height: 25px;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    line-height: 30px;
   }
 
   #about span {
@@ -87,32 +100,32 @@
   }
 
   #skills {
-    height: 320px;
+    height: 420px;
   }
 
   #skills::after {
-    top: 320px;
+    top: 420px;
   }
 
   #skills h2 {
     margin-bottom: 25px;
   }
 
+  #skills-container {
+    width: 90%;
+  }
+
   .skills-card-wrapper {
-    width: 20%;
+    width: 23%;
   }
 
   .skills-card {
-    height: 220px;
+    height: 320px;
   }
 
   .skills-card-back {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 10px;
-  }
-
-  .skills-card-back li {
-    padding: 4px;
   }
 
   #experience {
@@ -122,59 +135,55 @@
 
   #experience h2 {
     margin-bottom: 25px;
+    width: 90%;
   }
 
   .experience-boxes {
-    width: 60%;
+    margin-left: 5%;
+    width: 70%;
   }
 
-  .experience-boxes fieldset {
-    font-size: 0.8rem;
-    height: 140px;
+  .experience-boxes fieldset {   
+    height: 150px;
     padding: 10px;
-    width: 250px;
+    width: 300px;
   }
 
   .experience-boxes fieldset::after {
-    top: 140px;
+    top: 150px;
   }
 
   .experience-boxes legend {
-    font-size: 1rem;
     padding: 7px 10px;
-    width: 150px;
-  }
-
-  .experience-boxes p {
-    padding: 10px;
-  }
-
-  .experience-boxes i {
-    font-size: 2rem;
-  }
-
-  .fa-angle-double-up {
-    margin-right: calc(125px - 1rem);
-    padding: 74px 0 45px 0;
+    width: 175px;
   }
 
   .web-dev-animation {
-    width: 250px;
+    width: 300px;
   }
   
 }
 
 /*//////////////////////////////////////*/
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1060px) {
 
   .experience-boxes {
-    width: 70%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .nav-fixed {
+    width: 12%;
+  }
+
+  .nav-fixed:hover {
+    left: 88%;
   }
 
 }
 
-/*//////////////////////////////////////*/
+/*//////////////////////////////////////
 
 @media all and (max-width: 900px) {
 
@@ -260,11 +269,174 @@
 
   .skills-card-back {
     align-items: center;
-    padding: 12px;
+    padding: 8px;
   }
 
   .skills-card-back li {
     padding: 6px;
   }
 
+  .experience-boxes {
+    width: 80%;
+  }
+
 }
+
+@media all and (max-width: 800px) {
+
+  .header-image-container img {
+    width: 250px;
+  }
+
+  #skills {
+    height: 325px;
+  }
+
+  #skills::after {
+    top: 325px;
+  }
+
+  .skills-card {
+    height: 240px;
+  }
+
+  .skills-card-back {
+    font-size: 0.6rem;
+  }
+
+  #experience {
+    height: 700px;
+  }
+
+  .experience-boxes fieldset {
+    font-size: 0.7rem;
+    height: 125px;
+    padding: 10px;
+    width: 230px;
+  }
+
+  .experience-boxes fieldset::after {
+    top: 125px;
+  }
+
+  .web-dev-animation {
+    width: 230px;
+  }
+
+}
+
+@media all and (max-width: 700px) {
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  header {
+    height: 400px;
+  }
+  
+  header::after {
+    top: 400px;
+  }
+
+  .header-headings-container p {
+    margin-bottom: 25px;
+  }
+  
+  .header-image-container img {
+    width: 200px;
+  }
+
+  #about {
+    height: 600px;
+  }
+
+  .about-image-container img {
+    width: 200px;
+  }
+
+  #about p {
+    font-size: 0.7rem;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+
+  #about span {
+    font-size: 1.25rem;
+  }
+  
+  #about i {
+    font-size: 1.75rem;
+    margin-right: 15px;
+  }
+
+  #skills {
+    height: 520px;
+  }
+  
+  #skills::after {
+    top: 520px;
+  }
+
+  .skills-card-wrapper {
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  
+  .skills-card {
+    height: 200px;
+  }
+
+  .skills-card-back {
+    padding: 16px;
+  }
+
+  .skills-card-back li {
+    padding: 4px;
+    width: 80%;
+  }
+
+  #experience {
+    height: 800px;
+  }
+
+  .experience-boxes fieldset {
+    font-size: 0.66rem;
+    height: 110px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .experience-boxes fieldset::after {
+    top: 110px;
+  }
+  
+  .experience-boxes legend {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    width: 125px;
+  }
+
+  .web-dev-animation {
+    width: 200px;
+  }
+
+  .experience-boxes i {
+    color: #1489CC;
+    font-size: 1.5rem;
+  }
+
+  .fa-angle-double-up {
+    margin-right: calc(100px - 0.75rem);
+    padding: 74px 0 45px 0;
+  }
+
+  .nav-fixed {
+    width: 15%;
+  }
+
+  .nav-fixed:hover {
+    left: 85%;
+  }
+
+} */

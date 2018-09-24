@@ -453,15 +453,11 @@ header::after {
   margin-left: 0;
 }
 
-.current-section i {
-  font-size: 1.5rem;
-}
-
 #right-arrow {
   left: 95%;
   opacity: 0.5;
   position: fixed;
   top: calc(50% - 21px);
   z-index: 999;
-  width: 20px;
+  width: 15px;
 }
