@@ -20,11 +20,7 @@
 
   .nav-fixed {
     background-image: url('../img/bg-pattern2.png');
-    left: 95%;
-    opacity: 0;
-    transition: left 0.5s,
-      background 0.5s,
-      box-shadow 0.5s;
+    transition: left 0.5s;
     z-index: 1000;
   }
 
@@ -184,260 +180,34 @@
 
 }
 
-/*//////////////////////////////////////
+/*//////////////////////////////////////*/
 
 @media all and (max-width: 900px) {
 
-  nav {
-    font-size: 0.6rem;
-    height: 70px;
-  }
-
-  nav ul {
-    justify-content: space-between;
-    width: 80%;
-  }
-
-  nav li {
-    margin-left: 0;
-  }
-  
-  nav i {
-    font-size: 0.7rem;
-    margin-bottom: 10px;
-  }
-
-  header {
-    height: 470px;
-  }
-
-  header::after {
-    top: 470px;
-  }
-
-  .header-headings-container {
-    font-size: 1rem;
-  }
-
-  .header-image-container img {
-    width: 250px;
-  }
-
-  #about {
-    height: 700px;
-  }
-
-  .about-image-container img {
-    width: 250px;
-  }
-
-  #about p {
-    font-size: 0.8rem;
-    line-height: 20px;
-    margin-bottom: 20px;
-  }
-
-  #about span {
-    font-size: 1.3rem;
-  }
-  
-  #about i {
-    font-size: 2rem;
-    margin-right: 20px;
-  }
-
-  #skills {
-    height: 350px;
-  }
-
-  #skills::after {
-    top: 350px;
-  }
-
-  #skills-container {
-    flex-wrap: wrap;
-    width: 80%;
-  }
-
-  .skills-card-wrapper {
-    width: 23%;
-    
-  }
-
-  .skills-card {
-    height: 260px;
-  }
-
-  .skills-card-back {
-    align-items: center;
-    padding: 8px;
-  }
-
-  .skills-card-back li {
-    padding: 6px;
-  }
-
-  .experience-boxes {
-    width: 80%;
-  }
-
-}
-
-@media all and (max-width: 800px) {
-
-  .header-image-container img {
-    width: 250px;
-  }
-
-  #skills {
-    height: 325px;
-  }
-
-  #skills::after {
-    top: 325px;
-  }
-
-  .skills-card {
-    height: 240px;
-  }
-
-  .skills-card-back {
-    font-size: 0.6rem;
-  }
-
-  #experience {
-    height: 700px;
-  }
-
-  .experience-boxes fieldset {
-    font-size: 0.7rem;
-    height: 125px;
-    padding: 10px;
-    width: 230px;
-  }
-
-  .experience-boxes fieldset::after {
-    top: 125px;
-  }
-
-  .web-dev-animation {
-    width: 230px;
-  }
-
-}
-
-@media all and (max-width: 700px) {
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  header {
-    height: 400px;
-  }
-  
-  header::after {
-    top: 400px;
-  }
-
-  .header-headings-container p {
-    margin-bottom: 25px;
-  }
-  
-  .header-image-container img {
-    width: 200px;
-  }
-
-  #about {
-    height: 600px;
-  }
-
-  .about-image-container img {
-    width: 200px;
-  }
-
-  #about p {
-    font-size: 0.7rem;
-    line-height: 15px;
-    margin-bottom: 15px;
-  }
-
-  #about span {
-    font-size: 1.25rem;
-  }
-  
-  #about i {
-    font-size: 1.75rem;
-    margin-right: 15px;
-  }
-
-  #skills {
-    height: 520px;
-  }
-  
-  #skills::after {
-    top: 520px;
-  }
-
-  .skills-card-wrapper {
-    margin-bottom: 30px;
-    width: 40%;
-  }
-  
-  .skills-card {
-    height: 200px;
-  }
-
-  .skills-card-back {
-    padding: 16px;
-  }
-
-  .skills-card-back li {
-    padding: 4px;
-    width: 80%;
-  }
-
-  #experience {
-    height: 800px;
-  }
-
-  .experience-boxes fieldset {
-    font-size: 0.66rem;
-    height: 110px;
-    padding: 10px;
-    width: 200px;
-  }
-
-  .experience-boxes fieldset::after {
-    top: 110px;
-  }
-  
-  .experience-boxes legend {
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    width: 125px;
-  }
-
-  .web-dev-animation {
-    width: 200px;
-  }
-
-  .experience-boxes i {
-    color: #1489CC;
-    font-size: 1.5rem;
-  }
-
-  .fa-angle-double-up {
-    margin-right: calc(100px - 0.75rem);
-    padding: 74px 0 45px 0;
-  }
-
   .nav-fixed {
-    width: 15%;
+    height: 80px;
+    left: 0;
+    opacity: 0.8;
+    width: 100%;
   }
-
+  
   .nav-fixed:hover {
-    left: 85%;
+    left: 0;
+  }
+  
+  .nav-fixed ul {
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    width: 90%;
   }
 
-} */
+  .nav-fixed::before {
+    background-color: rgba(14, 71, 107, 0);
+  }
+  
+  .nav-fixed:hover {
+    opacity: 1;
+  }
+  
+}

@@ -46,7 +46,6 @@ h2 {
 /* NAV BAR */
 
 nav {
-  align-items: center;
   color: #fff;
   display: flex;
   font-size: 0.8rem;
@@ -431,15 +430,31 @@ header::after {
 /* DYNAMIC CLASSES */
 
 .nav-fixed {
+  align-items: center;
   height: 100vh;
-  left: 90%;
-  opacity: 0.5;
+  left: 100%;
   position: fixed;
   width: 10%;
 }
 
+.nav-fixed::before {
+  background-color: #0E476B;
+  content: "";
+  height: 50px;
+  left: -25px;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+  width: 50px;
+  z-index: -1;
+}
+
 .nav-fixed:hover {
   opacity: 1;
+}
+
+.nav-fixed:hover::before {
+  transform: rotate(0deg) translate(50px);
 }
 
 .nav-fixed ul {
@@ -451,14 +466,4 @@ header::after {
 .nav-fixed li {
   height: 50px;
   margin-left: 0;
-}
-
-.right-arrow {
-  color: #fff;
-  font-size: 3rem;
-  left: calc(95% - 1.5rem);
-  padding: 5px;
-  position: fixed;
-  top: 21px;
-  z-index: 1999;
 }
