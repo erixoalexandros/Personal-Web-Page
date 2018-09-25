@@ -453,11 +453,12 @@ header::after {
   margin-left: 0;
 }
 
-#right-arrow {
-  left: 95%;
-  opacity: 0.5;
+.right-arrow {
+  color: #fff;
+  font-size: 3rem;
+  left: calc(95% - 1.5rem);
+  padding: 5px;
   position: fixed;
-  top: calc(50% - 21px);
-  z-index: 999;
-  width: 15px;
+  top: 21px;
+  z-index: 1999;
 }

@@ -18,9 +18,9 @@ window.addEventListener('load', function () {//Load Page first
     if (pageYOffset > 100) {//When nav bar is not visible at the top
 
       // Add Right Arrow if screen -1500px wide
-      if (innerWidth <= 1500 && wrapper.lastElementChild.id !== 'right-arrow') {
+      if (innerWidth <= 1500 && !wrapper.lastElementChild.classList.contains('right-arrow')) {
 
-        wrapper.insertAdjacentHTML('beforeend', '<img id="right-arrow" src="img/right-arrow.svg" alt="Right Arrow">');
+        wrapper.insertAdjacentHTML('beforeend', '<i class="fas fa-bars right-arrow"></i>');
 
       }
 
@@ -32,9 +32,10 @@ window.addEventListener('load', function () {//Load Page first
 
     } else {
 
-      if (wrapper.lastElementChild.id === 'right-arrow') {//Remove Right Arrow Image
+      if (wrapper.lastElementChild.classList.contains('right-arrow')) {//Remove Right Arrow Image
 
         wrapper.removeChild(wrapper.lastElementChild);
+        
       }
 
       if (nav.classList.contains('nav-fixed')) {//Unfix nav bar
@@ -44,4 +45,5 @@ window.addEventListener('load', function () {//Load Page first
       }
     }
   }
+
 });
