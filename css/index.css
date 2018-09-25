@@ -432,29 +432,9 @@ header::after {
 .nav-fixed {
   align-items: center;
   height: 100vh;
-  left: 100%;
+  left: 90%;
   position: fixed;
   width: 10%;
-}
-
-.nav-fixed::before {
-  background-color: #0E476B;
-  content: "";
-  height: 50px;
-  left: -25px;
-  position: absolute;
-  transform: rotate(45deg);
-  transition: transform 0.5s;
-  width: 50px;
-  z-index: -1;
-}
-
-.nav-fixed:hover {
-  opacity: 1;
-}
-
-.nav-fixed:hover::before {
-  transform: rotate(0deg) translate(50px);
 }
 
 .nav-fixed ul {
@@ -464,6 +444,5 @@ header::after {
 }
 
 .nav-fixed li {
-  height: 50px;
   margin-left: 0;
 }

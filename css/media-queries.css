@@ -20,12 +20,29 @@
 
   .nav-fixed {
     background-image: url('../img/bg-pattern2.png');
+    left: 100%;
     transition: left 0.5s;
     z-index: 1000;
   }
 
+  .nav-fixed::before {
+    background-color: #0E476B;
+    content: "";
+    height: 50px;
+    left: -25px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+    width: 50px;
+    z-index: -1;
+  }
+
   .nav-fixed:hover {
     left: 90%;
+  }
+
+  .nav-fixed:hover::before {
+    transform: rotate(0deg) translate(50px);
   }
 
 }
