@@ -84,7 +84,13 @@
   }
 
   #about {
-    height: 900px;
+    height: 850px;
+    width: 90%;
+  }
+
+  #about article {
+    align-items: center;
+    margin-bottom: 50px;
   }
 
   .about-image-container {
@@ -92,20 +98,21 @@
   }
 
   .about-image-container img {
-    width: 350px;
+    width: 300px;
   }
 
-  #about article {
-    width: 45%;
-  }
-
-  #about p {
+  .about-paragraphs-container {
     font-size: 1.25rem;
+    width: 55%;
+  }
+
+  .about-paragraphs-container p {
     line-height: 30px;
+    margin-bottom: 25px;
   }
 
   #about span {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   #about i {
@@ -201,6 +208,24 @@
 
 @media all and (max-width: 900px) {
 
+  nav {
+    font-size: 0.9rem;
+    height: 70px;
+  }
+  
+  nav ul {
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  nav li {
+    margin-left: 0;
+  }
+  
+  nav i {
+    margin-bottom: 10px;
+  }
+
   .nav-fixed {
     height: 80px;
     left: 0;
@@ -225,6 +250,65 @@
   
   .nav-fixed:hover {
     opacity: 1;
+  }
+
+  #about {
+    height: 800px;
+  }
+
+  #about article {
+    align-items: flex-start;
+  }
+
+  .about-paragraphs-container {
+    font-size: 1.125rem;
+  }
+
+  .about-paragraphs-container p {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .about-image-container img {
+    width: 250px;
+  }
+  
+  #about span {
+    font-size: 1.8rem;
+  }
+  
+  #about i {
+    font-size: 2.5rem;
+    margin-right: 20px;
+  }
+
+  #skills {
+    height: 360px;
+  }
+
+  #skills::after {
+    top: 360px;
+  }
+
+  .skills-card-wrapper {
+    width: 23%;
+  }
+
+  .skills-card {
+    height: 250px;
+  }
+
+  .skills-card-back {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .skills-card-back li {
+    padding: 5px;
+  }
+
+  .experience-boxes i {
+    font-size: 2rem;
   }
   
 }
