@@ -312,3 +312,31 @@
   }
   
 }
+
+@media all and (max-width: 750px) {
+
+  nav {
+    background-image: url('../img/bg-pattern2.png');
+    font-size: 0.8rem;
+    height: 100vh;
+    left: 100%;
+    position: fixed;
+    transition: left 0.5s;
+    width: 20%;
+    z-index: 10;
+  }
+
+  nav ul{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  nav i {
+    font-size: 1.5rem;
+  }
+
+  #nav-menu-icon {
+    display: block;
+  }
+
+}

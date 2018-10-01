@@ -427,7 +427,7 @@ header::after {
 
 /* EDUCATION END /////////////////////////////////////////////// */
 
-/* DYNAMIC CLASSES */
+/* DYNAMIC CLASSES/IDs */
 
 .nav-fixed {
   align-items: center;
@@ -445,4 +445,17 @@ header::after {
 
 .nav-fixed li {
   margin-left: 0;
+}
+
+#nav-menu-icon {
+  background-color: #00000050;
+  color: #fff;
+  display: none;
+  font-size: 3rem;
+  left: calc(95% - 62px);
+  padding: 5px 10px;
+  position: fixed;
+  top: 1.5rem;
+  transition: display 1.5s;
+  z-index: 11;
 }
