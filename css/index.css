@@ -448,7 +448,8 @@ header::after {
 }
 
 #nav-menu-icon {
-  background-color: #00000050;
+  background-color: #0E476B;
+  box-shadow: 0 5px 9px -1px rgba(0,0,0,0.50);
   color: #fff;
   display: none;
   font-size: 3rem;
@@ -456,6 +457,19 @@ header::after {
   padding: 5px 10px;
   position: fixed;
   top: 1.5rem;
-  transition: display 1.5s;
-  z-index: 11;
+  z-index: 9;
+  transition: left 0.5s, opacity 0.5s, background-color 0.2s;
+}
+
+#nav-menu-icon:hover {
+  background-color: #1489CC;
+}
+
+#nav-close-icon {
+  color: #FF595E;
+  display: none;
+}
+
+#nav-close-icon:hover {
+  color: #FFCA3A;
 }

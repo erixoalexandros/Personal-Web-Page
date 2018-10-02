@@ -229,8 +229,11 @@
   .nav-fixed {
     height: 80px;
     left: 0;
-    opacity: 0.8;
     width: 100%;
+  }
+
+  .nav-fixed::before {
+    background-color: rgba(14, 71, 107, 0);
   }
   
   .nav-fixed:hover {
@@ -242,14 +245,6 @@
     height: 100%;
     justify-content: space-between;
     width: 90%;
-  }
-
-  .nav-fixed::before {
-    background-color: rgba(14, 71, 107, 0);
-  }
-  
-  .nav-fixed:hover {
-    opacity: 1;
   }
 
   #about {
@@ -332,11 +327,44 @@
   }
 
   nav i {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   #nav-menu-icon {
+    cursor: pointer;
     display: block;
   }
+
+  header {
+    height: 400px;
+  }
+
+  header::before {
+    display: none;
+  }
+
+  header::after {
+    top: 400px;
+  }
+  
+  .header-headings-container {
+    align-items: flex-start;
+    font-size: 1.75rem;
+    width: 80%;
+  }
+
+  .header-headings-container button {
+    font-size: 1.125rem;
+  }
+  
+  .header-headings-container i {
+    margin-right: 20px;
+  }
+
+  .header-image-container {
+    display: none;
+  }
+
+  
 
 }
