@@ -7,6 +7,7 @@ window.addEventListener('load', function () {//Load Page first
   var navItems = Array.prototype.slice.call(nav.firstElementChild.children);
   var navIcon = document.getElementById('nav-menu-icon');
   var navCloseIcon = document.getElementById('nav-close-icon');
+  var aboutPicture = document.querySelector('#about img');
   //DOM LOADER/////////////////////////////////////////////
 
   this.addEventListener('scroll', function () {//When scroll
@@ -26,8 +27,10 @@ window.addEventListener('load', function () {//Load Page first
 
       if (nav.classList.contains('nav-fixed')) {//Unfix nav bar
         nav.classList.remove('nav-fixed');   
-      }      
+      }  
+
     }
+
   }
 
   navIcon.addEventListener('click', function() {
@@ -36,6 +39,7 @@ window.addEventListener('load', function () {//Load Page first
       this.style.left = '100%';
       this.style.opacity = '0';
       navCloseIcon.style.display = 'block';
+
   });
 
   navItems.forEach(function(item) {
@@ -43,11 +47,19 @@ window.addEventListener('load', function () {//Load Page first
     item.addEventListener('click', function() {
 
       if (innerWidth <= 750) {
-
         nav.style.left = '100%';
-        navIcon.style.left = 'calc(95% - 62px)';
+        navIcon.style.left = '80%';
         navIcon.style.opacity = '1';
       }
+
     });
+
   });
+
+  if (innerWidth < 750) {
+    aboutPicture.src = 'img/me-landscape.png';
+  } else {
+    aboutPicture.src = 'img/me-portrait.png';
+  }
+
 });
