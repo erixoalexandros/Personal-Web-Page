@@ -312,7 +312,7 @@
 
   nav {
     background-image: url('../img/bg-pattern2.png');
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     height: 100vh;
     left: 100%;
     position: fixed;
@@ -327,7 +327,7 @@
   }
 
   nav i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #nav-menu-icon {

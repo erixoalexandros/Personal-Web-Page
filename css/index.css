@@ -453,10 +453,10 @@ header::after {
   color: #fff;
   display: none;
   font-size: 3rem;
-  left: 80%;
+  left: calc(90% - 2rem);
   padding: 5px 10px;
   position: fixed;
-  top: 2rem;
+  top: 1.5rem;
   z-index: 9;
   transition: left 0.5s, opacity 0.5s, background-color 0.2s;
 }
