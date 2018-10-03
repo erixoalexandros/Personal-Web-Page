@@ -3,10 +3,11 @@
 window.addEventListener('load', function () {//Load Page first
 
   //DOM LOADER/////////////////////////////////////////////
+  var wrapper = document.getElementById('wrapper');
   var nav = document.getElementsByTagName('nav')[0];
-  // var navItems = Array.prototype.slice.call(nav.firstElementChild.children);
-  // var navIcon = document.getElementById('nav-menu-icon');
-  // var navCloseIcon = document.getElementById('nav-close-icon');
+  var navItems = Array.prototype.slice.call(nav.firstElementChild.children);//Convert node-list in an Array
+  var navIcon = document.getElementById('nav-menu-icon');
+  var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
   //DOM LOADER/////////////////////////////////////////////
 
@@ -28,7 +29,7 @@ window.addEventListener('load', function () {//Load Page first
 
   }
 
-  function pictureOrientation () {
+  function pictureOrientation () {// Control the orientation of the picture
 
     if (innerWidth < 750) {
       aboutPicture.src = 'img/me-landscape.png';
@@ -38,8 +39,8 @@ window.addEventListener('load', function () {//Load Page first
 
   }
 
-  navBarBehavior();
-  pictureOrientation();
+  navBarBehavior();//... when page is loaded
+  pictureOrientation();//... when page is loaded
 
   this.addEventListener('scroll', function () {//When scroll
 
@@ -47,42 +48,53 @@ window.addEventListener('load', function () {//Load Page first
 
   });
 
-  this.addEventListener('resize', function () {
+  this.addEventListener('resize', function () {//When resize...
     
     navBarBehavior();
     pictureOrientation();
-    nav.style.transition = 'none';
 
     if (innerWidth <= 900) {
-      nav.style.transition = 'none';   
+      
+      nav.style.transition = 'none';//...Avoid flying effect of the nav-bar accross the page
+      
+      if (nav.classList.contains('nav-mobile')) {//...Close nav-bar
+        
+        nav.classList.remove('nav-mobile');
+        navIcon.style.left = 'calc(90% - 2rem)';//...Restore Nav Icon position
+        navIcon.style.opacity = '1';
+
+      }
+
     } else {
-      nav.style.transition = 'left 0.5s';
+
+      nav.style.transition = 'left 0.5s'; //Keep the transition effect
+
     }
 
   });
 
-  // navIcon.addEventListener('click', function() {
+  navIcon.addEventListener('click', function() {//When click on the Nav-icon
 
-  //     nav.style.left = '80%';
-  //     this.style.left = '100%';
-  //     this.style.opacity = '0';
-  //     navCloseIcon.style.display = 'block';
+      nav.classList.add('nav-mobile');// Add visibility to the nav bar
+      this.style.left = '100%';// Hide nav-bar icon
+      this.style.opacity = '0';
 
-  // });
+  });
 
-  // navItems.forEach(function(item) {
+  navItems.forEach(function(item) {
 
-  //   item.addEventListener('click', function() {
+    item.addEventListener('click', function() {// Hide nav-bar when click on any list item
 
-  //     if (innerWidth <= 750) {
-  //       nav.style.left = '100%';
-  //       navIcon.style.left = 'calc(90% - 2rem)';
-  //       navIcon.style.opacity = '1';
-  //       navCloseIcon.style.display = 'none';
-  //     }
+      if (innerWidth <= 750) {
 
-  //   });
+        nav.classList.remove('nav-mobile');
+        navIcon.style.left = 'calc(90% - 2rem)';// Show nav-bar icon back
+        navIcon.style.opacity = '1';
 
-  // });
+      }
+
+    });
+
+  });
 
 });

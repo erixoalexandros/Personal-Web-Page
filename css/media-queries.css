@@ -400,4 +400,73 @@
     opacity: 0.7;
   }
 
+  #skills {
+    height: 650px;
+  }
+
+  #skills::after {
+    top: 650px;
+  }
+
+  #skills h2 {
+    width: 80%;
+  }
+
+  #skills-container {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .skills-card-wrapper {
+    margin-bottom: 40px;
+    width: 45%;
+  }
+
+  .skills-card-back {
+    padding: 25px;
+  }
+  
+  #experience {
+    height: 1300px;
+    padding-top: 100px;
+  }
+
+  #experience h2 {
+    width: 80%;
+  }
+
+  .experience-boxes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+  }
+
+  .web-dev-animation {
+    width: 100%;
+  }
+
+  .experience-boxes fieldset {
+    height: 165px;
+    padding: 20px;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .experience-boxes i {
+    font-size: 3rem;
+    margin: 60px auto;
+  }
+
+  .fa-angle-double-up {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: auto;
+  }
+
 }
