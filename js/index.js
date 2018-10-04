@@ -3,14 +3,14 @@
 window.addEventListener('load', function () {//Load Page first
 
   //DOM LOADER/////////////////////////////////////////////
-  var wrapper = document.getElementById('wrapper');
   var nav = document.getElementsByTagName('nav')[0];
   var navItems = Array.prototype.slice.call(nav.firstElementChild.children);//Convert node-list in an Array
   var navIcon = document.getElementById('nav-menu-icon');
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
+  var arrows = Array.prototype.slice.call(document.querySelectorAll('.experience-boxes i'));
   //DOM LOADER/////////////////////////////////////////////
-
+  
   function navBarBehavior() {
 
     if (pageYOffset > 100 && innerWidth > 750) {//When nav bar is not visible at the top
@@ -39,8 +39,42 @@ window.addEventListener('load', function () {//Load Page first
 
   }
 
+  function replaceArrows() {
+
+    if (innerWidth < 750) {
+
+      arrows.forEach(function(arrow) {
+
+        if (!arrow.classList.contains('fa-angle-double-up')) {
+    
+          arrow.classList.remove(arrow.classList.item(1));
+          arrow.classList.add('fa-angle-double-up');
+    
+        }
+    
+      });
+      
+    } else {
+
+      if (arrows[0].classList.contains('fa-angle-double-up')) {
+
+        arrows[0].classList.remove('fa-angle-double-up');
+        arrows[0].classList.add('fa-angle-double-left');
+
+      } else if (arrows[2].classList.contains('fa-angle-double-up')) {
+
+        arrows[2].classList.remove('fa-angle-double-up');
+        arrows[2].classList.add('fa-angle-double-left');
+
+      }
+
+    } 
+    
+  }
+
   navBarBehavior();//... when page is loaded
-  pictureOrientation();//... when page is loaded
+  pictureOrientation();
+  replaceArrows();
 
   this.addEventListener('scroll', function () {//When scroll
 
@@ -52,6 +86,7 @@ window.addEventListener('load', function () {//Load Page first
     
     navBarBehavior();
     pictureOrientation();
+    replaceArrows();
 
     if (innerWidth <= 900) {
       

@@ -427,7 +427,7 @@
   }
   
   #experience {
-    height: 1300px;
+    height: 1600px;
     padding-top: 100px;
   }
 
@@ -435,11 +435,7 @@
     width: 80%;
   }
 
-  .experience-boxes {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .experience-boxes { 
     margin: auto;
     width: 80%;
   }
@@ -449,24 +445,20 @@
   }
 
   .experience-boxes fieldset {
-    height: 165px;
     padding: 20px;
-    position: relative;
-    text-align: right;
-    text-transform: uppercase;
+    text-align: center;
     width: 100%;
   }
 
   .experience-boxes i {
     font-size: 3rem;
     margin: 60px auto;
+    text-align: center;
+    width: 100%;
   }
 
   .fa-angle-double-up {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-    width: auto;
+    padding: 0; 
   }
 
 }
