@@ -222,7 +222,7 @@ header::after {
 
 #skills {
   background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
-  height: 500px;
+  height: 520px;
   position: relative;
 }
 
@@ -240,7 +240,7 @@ header::after {
   content: '';
   height: 74px;
   position: absolute;
-  top: 500px;
+  top: 520px;
   width: 100%;
 }
 

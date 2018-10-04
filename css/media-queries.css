@@ -51,10 +51,6 @@
 
 @media all and (max-width: 1200px) {
 
-  h2 {
-    margin-bottom: 25px;
-  }
-
   nav {
     height: 80px;
   }
@@ -120,15 +116,14 @@
   }
 
   #skills {
-    height: 420px;
+    height: 480px;
   }
 
   #skills::after {
-    top: 420px;
+    top: 480px;
   }
 
   #skills h2 {
-    margin-bottom: 25px;
     width: 90%;
   }
 
@@ -155,7 +150,6 @@
   }
 
   #experience h2 {
-    margin-bottom: 25px;
     width: 90%;
   }
 
@@ -278,11 +272,11 @@
   }
 
   #skills {
-    height: 360px;
+    height: 400px;
   }
 
   #skills::after {
-    top: 360px;
+    top: 400px;
   }
 
   .skills-card-wrapper {
@@ -401,11 +395,11 @@
   }
 
   #skills {
-    height: 650px;
+    height: 700px;
   }
 
   #skills::after {
-    top: 650px;
+    top: 700px;
   }
 
   #skills h2 {

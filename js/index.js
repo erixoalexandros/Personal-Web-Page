@@ -9,6 +9,7 @@ window.addEventListener('load', function () {//Load Page first
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
   var arrows = Array.prototype.slice.call(document.querySelectorAll('.experience-boxes i'));
+  var experience = document.getElementsByClassName('experience-boxes')[0];
   //DOM LOADER/////////////////////////////////////////////
   
   function navBarBehavior() {
@@ -75,6 +76,7 @@ window.addEventListener('load', function () {//Load Page first
   navBarBehavior();//... when page is loaded
   pictureOrientation();
   replaceArrows();
+  changeExperienceToMobile();
 
   this.addEventListener('scroll', function () {//When scroll
 
@@ -87,6 +89,7 @@ window.addEventListener('load', function () {//Load Page first
     navBarBehavior();
     pictureOrientation();
     replaceArrows();
+    changeExperienceToMobile();
 
     if (innerWidth <= 900) {
       
@@ -131,5 +134,99 @@ window.addEventListener('load', function () {//Load Page first
     });
 
   });
+
+  function changeExperienceToMobile() {
+
+    if (innerWidth <= 750) {
+
+      experience.innerHTML = `
+                <fieldset>
+                    <legend>2006 - 2009</legend>
+                    <p>Intranet Webmaster</p>
+                    <p>Military Academy</p>
+                    <p>Havana, Cuba</p>
+                </fieldset>
+
+                <i class="fas fa-angle-double-down"></i>
+
+                <fieldset>
+                    <legend>2010 - 2015</legend>
+                    <p>Network Administrator</p>
+                    <p>Historian's Office Of Havana</p>
+                    <p>Havana, Cuba</p>
+                </fieldset>
+
+                <i class="fas fa-angle-double-down"></i>
+
+                <fieldset>
+                    <legend>2016 - Present</legend>
+                    <p>IT Specialist</p>
+                    <p>San Jose Clinic</p>
+                    <p>Houston, TX</p>
+                </fieldset>
+
+                <i class="fas fa-angle-double-down"></i>     
+                
+                <div class="web-dev-animation">
+                    <img class="static" src="img/web-dev-animation/web-development.svg">
+                    <img class="nut" src="img/web-dev-animation/nut.svg">
+                    <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
+                    <img class="ball green" src="img/web-dev-animation/green-ball.svg">
+                    <img class="ball blue" src="img/web-dev-animation/blue-ball.svg">
+                    <img class="ball red" src="img/web-dev-animation/red-ball.svg">
+                    <img class="light-bulb" src="img/web-dev-animation/light-bulb.svg">
+                    <img class="planet" src="img/web-dev-animation/planet.svg">
+                    <img class="angle-bracket" src="img/web-dev-animation/angle-bracket.svg">
+                    <img class="closed-tag" src="img/web-dev-animation/closed-tag.svg">
+                    <img class="rule" src="img/web-dev-animation/rule.svg">
+                    <img class="pen" src="img/web-dev-animation/pen.svg">
+                </div>`;
+
+    } else {
+      experience.innerHTML = `
+                <div class="web-dev-animation">
+                    <img class="static" src="img/web-dev-animation/web-development.svg">
+                    <img class="nut" src="img/web-dev-animation/nut.svg">
+                    <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
+                    <img class="ball green" src="img/web-dev-animation/green-ball.svg">
+                    <img class="ball blue" src="img/web-dev-animation/blue-ball.svg">
+                    <img class="ball red" src="img/web-dev-animation/red-ball.svg">
+                    <img class="light-bulb" src="img/web-dev-animation/light-bulb.svg">
+                    <img class="planet" src="img/web-dev-animation/planet.svg">
+                    <img class="angle-bracket" src="img/web-dev-animation/angle-bracket.svg">
+                    <img class="closed-tag" src="img/web-dev-animation/closed-tag.svg">
+                    <img class="rule" src="img/web-dev-animation/rule.svg">
+                    <img class="pen" src="img/web-dev-animation/pen.svg">
+                </div>
+
+                <i class="fas fa-angle-double-left"></i>
+
+                <fieldset>
+                    <legend>2016 - Present</legend>
+                    <p>IT Specialist</p>
+                    <p>San Jose Clinic</p>
+                    <p>Houston, TX</p>
+                </fieldset>
+
+                <i class="fas fa-angle-double-up"></i>
+
+                <fieldset>
+                    <legend>2006 - 2009</legend>
+                    <p>Intranet Webmaster</p>
+                    <p>Military Academy</p>
+                    <p>Havana, Cuba</p>
+                </fieldset>
+
+                <i class="fas fa-angle-double-right"></i>
+
+                <fieldset>
+                    <legend>2010 - 2015</legend>
+                    <p>Network Administrator</p>
+                    <p>Historian's Office Of Havana</p>
+                    <p>Havana, Cuba</p>
+                </fieldset>`;
+    }
+      
+  }
 
 });
