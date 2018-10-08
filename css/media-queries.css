@@ -14,7 +14,6 @@
   }
 
   .experience-boxes {
-    margin-left: 10%;
     width: 66%;
   }
 
@@ -53,10 +52,15 @@
 
   nav {
     height: 80px;
+    font-size: 0.9rem;
   }
 
   nav ul {
     width: 90%;
+  }
+
+  nav i {
+    font-size: 1rem;
   }
 
   header {
@@ -68,6 +72,7 @@
   }
 
   .header-headings-container {
+    font-size: 1.75rem;
     width: 45%;
   }
 
@@ -153,11 +158,6 @@
     width: 90%;
   }
 
-  .experience-boxes {
-    margin-left: 5%;
-    width: 70%;
-  }
-
   .experience-boxes fieldset {   
     height: 150px;
     padding: 10px;
@@ -184,7 +184,6 @@
 @media all and (max-width: 1060px) {
 
   .experience-boxes {
-    margin-left: 5%;
     width: 90%;
   }
 
@@ -203,7 +202,6 @@
 @media all and (max-width: 900px) {
 
   nav {
-    font-size: 0.9rem;
     height: 70px;
   }
   
@@ -239,6 +237,10 @@
     height: 100%;
     justify-content: space-between;
     width: 90%;
+  }
+
+  .header-headings-container {
+    font-size: 1.5rem;
   }
 
   #about {
@@ -304,10 +306,14 @@
 
 @media all and (max-width: 750px) {
 
+  h2 {
+    font-size: 2rem;
+  }
+
   nav {
     background-image: url('../img/bg-pattern2.png');
     font-size: 0.9rem;
-    height: 100vh;
+    height: 100%;
     left: 100%;
     position: fixed;
     transition: left 0.5s;
@@ -444,6 +450,16 @@
     width: 100%;
   }
 
+  .experience-boxes fieldset:nth-of-type(1) legend {
+    background-color: #FFCA3A;
+    color: #0E476B;
+  }
+
+  .experience-boxes fieldset:nth-of-type(3) legend {
+    background-color: #FF595E;
+    color: #fff;
+  }
+
   .experience-boxes i {
     font-size: 3rem;
     margin: 60px auto;
@@ -453,6 +469,103 @@
 
   .fa-angle-double-up {
     padding: 0; 
+  }
+
+}
+
+@media all and (max-width: 500px) {
+
+  nav {
+    font-size: 0.9rem;
+    width: 35%;
+  }
+
+  nav i {
+    font-size: 1.25rem;
+  }
+
+  #nav-menu-icon {
+    font-size: 2rem;
+    left: calc(90% - 2rem);
+    padding: 3px 7px;
+    top: 1rem;
+  }
+
+  .nav-mobile {
+    left: 65%;
+  }
+
+
+  header {
+    height: 450px;
+  }
+
+  header::after {
+    top: 450px;
+  }
+
+  .header-headings-container {
+    align-items: flex-start;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .header-headings-container p {
+    margin-bottom: 60px;
+  }
+
+  .header-headings-container p:first-of-type {
+    font-size: 1.75rem;
+  }
+
+  .header-headings-container p:last-of-type {
+    font-size: 1.25rem;
+  }
+
+  .header-headings-container button {
+    padding: 12px 20px;
+  }
+
+  #about {
+    height: 1070px;
+  }
+
+  .about-paragraphs-container {
+    font-size: 1rem;
+  }
+
+  #about span {
+    display: none;
+  }
+
+  #skills {
+    height: 1250px;
+  }
+
+  #skills::after {
+    top: 1250px;
+  }
+
+  .skills-card-wrapper {
+    width: 100%;
+  }
+
+  .skills-card-back li {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #experience {
+    height: 1400px;
+  }
+
+  .experience-boxes fieldset {
+    height: 160px;
+    padding: 8px;
+  }
+
+  .experience-boxes fieldset::after {
+    top: 160px;
   }
 
 }

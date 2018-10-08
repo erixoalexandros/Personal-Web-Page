@@ -12,6 +12,7 @@ body {
 }
 
 #wrapper {
+  background-attachment: fixed;
   background-color: #EAF3F9;
   background-image: url('../img/bg-pattern.svg');
   color: #0E476B;
@@ -38,7 +39,7 @@ a:hover {
 
 h2 {
   color: #1489CC;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 50px;
 }
 
@@ -47,7 +48,7 @@ h2 {
 nav {
   color: #fff;
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   height: 100px;
   justify-content: center;
   position: absolute;
@@ -64,11 +65,12 @@ nav ul {
 }
 
 nav li {
-  margin-left: 40px;
+  margin-left: 60px;
   user-select: none;
 }
 
 nav i {
+  font-size: 1.25rem;
   margin-bottom: 15px;
 }
 
@@ -108,7 +110,7 @@ header::after {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 2rem;
   justify-content: center;
   width: 40%;
 }
@@ -187,13 +189,13 @@ header::after {
 }
 
 .about-paragraphs-container {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   width: 50%;
 }
 
 .about-paragraphs-container p {
   line-height: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about-paragraphs-container p:last-child {
@@ -358,7 +360,7 @@ header::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 10%;
+  margin: auto;
   width: 60%;
 }
 
@@ -438,7 +440,7 @@ header::after {
 
 .nav-fixed ul {
   flex-direction: column;
-  height: 50%;
+  height: 60%;
   justify-content: space-between;
 }
 
@@ -447,7 +449,7 @@ header::after {
 }
 
 #nav-menu-icon {
-  background-color: #0E476B;
+  background-color: #1489cc;
   box-shadow: 0 2px 5px -1px rgba(0,0,0,0.50);
   color: #fff;
   display: none;
@@ -461,7 +463,7 @@ header::after {
 }
 
 #nav-menu-icon:hover {
-  background-color: #1489CC;
+  background-color: #3E9DD5;
 }
 
 #nav-close-icon {

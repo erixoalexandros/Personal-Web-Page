@@ -8,7 +8,6 @@ window.addEventListener('load', function () {//Load Page first
   var navIcon = document.getElementById('nav-menu-icon');
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
-  var arrows = Array.prototype.slice.call(document.querySelectorAll('.experience-boxes i'));
   var experience = document.getElementsByClassName('experience-boxes')[0];
   //DOM LOADER/////////////////////////////////////////////
   
@@ -30,110 +29,17 @@ window.addEventListener('load', function () {//Load Page first
 
   }
 
-  function pictureOrientation () {// Control the orientation of the picture
+  function pictureOrientation () {// Control picture orientation
 
-    if (innerWidth < 750) {
+    if (innerWidth <= 750 && innerWidth > 500) {
       aboutPicture.src = 'img/me-landscape.png';
+    } else if (innerWidth <= 500) {
+      aboutPicture.src = 'img/me-square.png';
     } else {
       aboutPicture.src = 'img/me-portrait.png';
     }
 
   }
-
-  function replaceArrows() {
-
-    if (innerWidth < 750) {
-
-      arrows.forEach(function(arrow) {
-
-        if (!arrow.classList.contains('fa-angle-double-up')) {
-    
-          arrow.classList.remove(arrow.classList.item(1));
-          arrow.classList.add('fa-angle-double-up');
-    
-        }
-    
-      });
-      
-    } else {
-
-      if (arrows[0].classList.contains('fa-angle-double-up')) {
-
-        arrows[0].classList.remove('fa-angle-double-up');
-        arrows[0].classList.add('fa-angle-double-left');
-
-      } else if (arrows[2].classList.contains('fa-angle-double-up')) {
-
-        arrows[2].classList.remove('fa-angle-double-up');
-        arrows[2].classList.add('fa-angle-double-left');
-
-      }
-
-    } 
-    
-  }
-
-  navBarBehavior();//... when page is loaded
-  pictureOrientation();
-  replaceArrows();
-  changeExperienceToMobile();
-
-  this.addEventListener('scroll', function () {//When scroll
-
-    navBarBehavior();
-
-  });
-
-  this.addEventListener('resize', function () {//When resize...
-    
-    navBarBehavior();
-    pictureOrientation();
-    replaceArrows();
-    changeExperienceToMobile();
-
-    if (innerWidth <= 900) {
-      
-      nav.style.transition = 'none';//...Avoid flying effect of the nav-bar accross the page
-      
-      if (nav.classList.contains('nav-mobile')) {//...Close nav-bar
-        
-        nav.classList.remove('nav-mobile');
-        navIcon.style.left = 'calc(90% - 2rem)';//...Restore Nav Icon position
-        navIcon.style.opacity = '1';
-
-      }
-
-    } else {
-
-      nav.style.transition = 'left 0.5s'; //Keep the transition effect
-
-    }
-
-  });
-
-  navIcon.addEventListener('click', function() {//When click on the Nav-icon
-
-      nav.classList.add('nav-mobile');// Add visibility to the nav bar
-      this.style.left = '100%';// Hide nav-bar icon
-      this.style.opacity = '0';
-
-  });
-
-  navItems.forEach(function(item) {
-
-    item.addEventListener('click', function() {// Hide nav-bar when click on any list item
-
-      if (innerWidth <= 750) {
-
-        nav.classList.remove('nav-mobile');
-        navIcon.style.left = 'calc(90% - 2rem)';// Show nav-bar icon back
-        navIcon.style.opacity = '1';
-
-      }
-
-    });
-
-  });
 
   function changeExperienceToMobile() {
 
@@ -228,5 +134,73 @@ window.addEventListener('load', function () {//Load Page first
     }
       
   }
+
+  function afterpageLoaded() {
+
+    navBarBehavior();
+    pictureOrientation();
+    changeExperienceToMobile();
+
+  }
+
+  afterpageLoaded();
+
+  //When scroll
+  this.addEventListener('scroll', function () {
+
+    navBarBehavior();
+
+  });
+
+  //When resize
+  this.addEventListener('resize', function () {
+    
+    afterpageLoaded();
+
+    if (innerWidth <= 900) {
+            
+      if (nav.classList.contains('nav-mobile')) {//...Close nav-bar
+        
+        nav.classList.remove('nav-mobile');
+        navIcon.style.left = 'calc(90% - 2rem)';//...Restore Nav Icon position
+        navIcon.style.opacity = '1';
+
+      } else if (navCloseIcon.style.display === 'block') {
+
+        navCloseIcon.style.display = 'none';
+  
+      } 
+
+    }
+
+  });
+
+  //When Nav-icon is clicked
+  navIcon.addEventListener('click', function() {
+
+      nav.classList.add('nav-mobile');// Add visibility to the nav bar
+      navCloseIcon.style.display = 'block';//Show close button on nav-bar
+      this.style.left = '100%';// Hide nav-bar icon
+      this.style.opacity = '0';
+
+  });
+
+
+  //When a nav-bar item is clicked
+  navItems.forEach(function(item) {
+
+    item.addEventListener('click', function() {// Hide nav-bar when click on any list item
+
+      if (innerWidth <= 750) {
+
+        nav.classList.remove('nav-mobile');
+        navIcon.style.left = 'calc(90% - 2rem)';// Show nav-bar icon back
+        navIcon.style.opacity = '1';
+
+      }
+
+    });
+
+  });
 
 });
