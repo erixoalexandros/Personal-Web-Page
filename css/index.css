@@ -524,7 +524,7 @@ header::after {
   width: 100%;
 }
 
-#courses-carousel p {
+#courses-carousel p:nth-child() {
   margin-bottom: 20px;
 }
 

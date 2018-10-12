@@ -9,7 +9,13 @@ window.addEventListener('load', function () {//Load Page first
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
   var experience = document.getElementsByClassName('experience-boxes')[0];
+  var courseArrows = document.querySelectorAll('#courses-carousel i');
+  var nextCourse = courseArrows[0];
+  var previousCourse = courseArrows[1];
+  var courseTitle = document.querySelector('#courses-carousel-card p:nth-child(1)');
   //DOM LOADER/////////////////////////////////////////////
+
+  console.log(courseTitle);
   
   function navBarBehavior() {
 
@@ -200,6 +206,24 @@ window.addEventListener('load', function () {//Load Page first
       }
 
     });
+
+  });
+
+  var coursesInfo = [
+    {
+      title: 'The Complete JavaScript Course',
+      source: 'Udemy'
+    },
+    {
+      title: 'Example',
+      source: 'Test'
+    }
+  ];
+
+  //When click right arrow to the next course 
+  nextCourse.addEventListener('click', function() {
+
+
 
   });
 
