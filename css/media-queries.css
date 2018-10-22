@@ -150,8 +150,7 @@
   }
 
   #experience {
-    height: 750px;
-    padding-top: 100px;
+    height: 900px;
   }
 
   #experience h2 {
@@ -298,6 +297,10 @@
     padding: 5px;
   }
 
+  #experience {
+    height: 850px;
+  }
+
   .experience-boxes i {
     font-size: 2rem;
   }
@@ -427,7 +430,7 @@
   }
   
   #experience {
-    height: 1600px;
+    height: 1650px;
     padding-top: 100px;
   }
 
@@ -556,7 +559,7 @@
   }
 
   #experience {
-    height: 1450px;
+    height: 1520px;
   }
 
   .experience-boxes fieldset {

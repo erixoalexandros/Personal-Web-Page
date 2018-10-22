@@ -10,12 +10,13 @@ window.addEventListener('load', function () {//Load Page first
   var aboutPicture = document.querySelector('#about img');
   var experience = document.getElementsByClassName('experience-boxes')[0];
   var courseArrows = document.querySelectorAll('#courses-carousel i');
-  var nextCourse = courseArrows[0];
-  var previousCourse = courseArrows[1];
-  var courseTitle = document.querySelector('#courses-carousel-card p:nth-child(1)');
+  var nextCourse = courseArrows[1];
+  var previousCourse = courseArrows[0];
+  var courseInfo = document.querySelectorAll('#courses-carousel-card p');
+  var courseTitle = courseInfo[0];
+  var courseSource = courseInfo[1];
+  var courseImage = document.querySelector('#courses-carousel-card img');
   //DOM LOADER/////////////////////////////////////////////
-
-  console.log(courseTitle);
   
   function navBarBehavior() {
 
@@ -209,22 +210,74 @@ window.addEventListener('load', function () {//Load Page first
 
   });
 
-  var coursesInfo = [
+  var courses = [
+    {
+      title: 'Build Responsive Real World Websites',
+      source: 'Udemy'
+    },
+    {
+      title: 'Responsive Website Development and Design        Specialization',
+      source: 'Coursera'
+    },
     {
       title: 'The Complete JavaScript Course',
       source: 'Udemy'
     },
     {
-      title: 'Example',
-      source: 'Test'
+      title: 'JavaScript: Understanding the Weird Parts',
+      source: 'Udemy'
+    },
+    {
+      title: 'Web Design for Web Developers',
+      source: 'Udemy'
+    },
+    {
+      title: 'Web Design with HTML, CSS, JavaScript and jQuery',
+      source: 'Jon Duckett Book Series'
+    },
+    {
+      title: 'You Don’t Know JS',
+      source: 'Kyle Simpson Book Series'
+    },
+    {
+      title: 'Head First JavaScript Programming',
+      source: 'Book'
     }
   ];
+
+  var currentImage = 0;
+
+  function changeCourseInfo() {
+    courseImage.src = `http://127.0.0.1:5500/img/Course-${currentImage}.jpg`;
+    courseTitle.textContent = courses[currentImage].title;
+    courseSource.textContent = courses[currentImage].source;
+    courseImage.alt = `${courses[currentImage].title} from ${courses[currentImage].source}`;
+  }
 
   //When click right arrow to the next course 
   nextCourse.addEventListener('click', function() {
 
+    currentImage++;
 
+    if (currentImage === courses.length) {
+      currentImage = 0;
+    }
 
+    changeCourseInfo();
+    
+  });
+
+  //When click left arrow to the prevoius course 
+  previousCourse.addEventListener('click', function() {
+
+    currentImage--;
+
+    if (currentImage === -1) {
+      currentImage = courses.length - 1;
+    }
+
+    changeCourseInfo();
+    
   });
 
 });
