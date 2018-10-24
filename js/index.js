@@ -212,11 +212,11 @@ window.addEventListener('load', function () {//Load Page first
 
   var courses = [
     {
-      title: 'Build Responsive Real World Websites',
+      title: `Build Responsive Real World Websites`,
       source: 'Udemy'
     },
     {
-      title: 'Responsive Website Development and Design        Specialization',
+      title: `Responsive Website Development and Design Specialization`,
       source: 'Coursera'
     },
     {
@@ -224,7 +224,7 @@ window.addEventListener('load', function () {//Load Page first
       source: 'Udemy'
     },
     {
-      title: 'JavaScript: Understanding the Weird Parts',
+      title: `JavaScript: Understanding the Weird Parts`,
       source: 'Udemy'
     },
     {
@@ -232,7 +232,7 @@ window.addEventListener('load', function () {//Load Page first
       source: 'Udemy'
     },
     {
-      title: 'Web Design with HTML, CSS, JavaScript and jQuery',
+      title: `Web Design with HTML, CSS, JavaScript and jQuery`,
       source: 'Jon Duckett Book Series'
     },
     {

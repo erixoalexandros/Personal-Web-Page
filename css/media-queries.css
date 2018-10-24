@@ -4,6 +4,14 @@
     width: 70%;
   }
 
+  #education {
+    height: 620px;
+  }
+
+  #education::after {
+    top: 620px;
+  }
+
 }
 
 @media all and (max-width: 1500px) {
@@ -15,6 +23,14 @@
 
   .experience-boxes {
     width: 66%;
+  }
+
+  #education {
+    height: 680px;
+  }
+
+  #education::after {
+    top: 680px;
   }
 
   .nav-fixed {
@@ -175,6 +191,22 @@
   .web-dev-animation {
     width: 300px;
   }
+
+  #education {
+    height: 600px;
+  }
+
+  #education::after {
+    top: 600px;
+  }
+  
+  #education h2 {
+    width: 90%;
+  }
+
+  .education-boxes {
+    width: 50%;
+  }
   
 }
 
@@ -304,7 +336,57 @@
   .experience-boxes i {
     font-size: 2rem;
   }
+
+  #education {
+    height: 500px;
+  }
+
+  #education::after {
+    top: 500px;
+  }
   
+  .education-boxes div {
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .education-boxes i {
+    margin-right: 20px;
+  }
+
+  .education-boxes h3 {
+    font-size: 1.25rem;
+  }
+
+  #courses-carousel {
+    padding: 10px;
+  }
+
+  #courses-carousel h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  #courses-carousel div {
+    border-width: 3px;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+  }
+  
+  #courses-carousel i:hover {
+    transform: scale(1.2);
+  }
+
+  #courses-carousel-card p {
+    height: 40px;
+    margin: 10px 0;
+  }
+  
+  #courses-carousel-card p:last-child {
+    font-size: 1rem;
+    height: 20px;
+  }
+
 }
 
 @media all and (max-width: 750px) {
