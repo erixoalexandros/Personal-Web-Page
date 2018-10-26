@@ -556,6 +556,42 @@
     padding: 0; 
   }
 
+  #education {
+    height: 1050px;
+  }
+
+  #education::after {
+    top: 1050px;
+  }
+
+  #education h2 {
+    width: 80%;
+  }
+
+  .education-boxes {
+    width: 80%;
+  }
+
+  .education-boxes div:last-child {
+    margin-bottom: 50px;
+  }
+
+  .education-boxes h3 {
+    font-size: 1.125rem;
+  }
+
+  .education-boxes p {
+    font-size: 1.125rem;
+  }
+
+  .courses-box {
+    width: 80%;
+  }
+
+  #courses-carousel h3 {
+    font-size: 1.125rem;
+  }
+
 }
 
 @media all and (max-width: 500px) {
@@ -651,6 +687,39 @@
 
   .experience-boxes fieldset::after {
     top: 160px;
+  }
+
+  #education {
+    height: 900px;
+  }
+
+  #education::after {
+    top: 900px;
+  }
+
+  .education-boxes div {
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .education-boxes i {
+    margin-right: 10px;
+  }
+
+  .education-boxes h3 {
+    font-size: 1rem;
+  }
+
+  .education-boxes p {
+    font-size: 1rem;
+  }
+
+  #courses-carousel h3 {
+    font-size: 1rem;
+  }
+
+  #courses-carousel div {
+    font-size: 1rem;
   }
 
 }
