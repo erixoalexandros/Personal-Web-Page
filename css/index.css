@@ -150,7 +150,8 @@ header::after,
 nav,
 .skills-card-back,
 .education-boxes i,
-#courses-carousel div {
+#courses-carousel div,
+.experience-boxes legend {
   text-align: center;
 }
 
@@ -248,7 +249,120 @@ header::after,
   font-size: 2rem;
 }
 
-/* NAV BAR */
+.header-headings-container,
+.header-image-container,
+.education-boxes,
+.courses-box {
+  width: 40%;
+}
+
+.header-headings-container button,
+.experience-boxes fieldset:nth-of-type(1) legend {
+  background-color: #FF595E;
+}
+
+.header-image-container img,
+.about-image-container img,
+.skills-card {
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+.header-image-container img,
+.about-image-container img {
+  width: 380px;
+}
+
+#about,
+#contact {
+  padding: 100px 0;
+}
+
+#about article,
+.experience-boxes,
+#education,
+#courses-carousel {
+  flex-wrap: wrap;
+}
+
+#about article,
+#skills-container,
+.experience-boxes,
+.nav-fixed ul {
+  justify-content: space-between;
+}
+
+.about-paragraphs-container p:last-child,
+.education-boxes div:last-child {
+  margin-bottom: 0;
+}
+
+#about span,
+#courses-carousel-card p:last-child {
+  font-style: italic;
+}
+
+#about i,
+#nav-close-icon {
+  color: #FF595E;
+}
+
+#about i,
+.education-boxes i {
+  margin-right: 40px;
+}
+
+#skills::before,
+#education::before {
+  top: -74px;
+}
+
+#skills::after,
+.experience-boxes fieldset::after,
+#education::after {
+  background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
+}
+
+#skills::before,
+#education::before {
+  background: url('../img/skills-top-edge.png') no-repeat center/cover;
+}
+
+#skills h2,
+#experience h2 {
+  margin: 0 auto 50px auto;
+}
+
+.skills-card-back,
+#courses-carousel-card p:last-child {
+  font-weight: 500;
+}
+
+.skills-card-back,
+.experience-boxes fieldset {
+  text-transform: uppercase;
+}
+
+.experience-boxes fieldset,
+#courses-carousel {
+  padding: 20px;
+}
+
+.experience-boxes fieldset,
+.fa-angle-double-up {
+  text-align: right;
+}
+
+.skills-card-front,
+.experience-boxes legend {
+  background-color: #FFCA3A;
+}
+
+.experience-boxes i,
+#nav-menu-icon {
+  font-size: 3rem;
+}
+
+/* NAV BAR /////////////////////////////////////////////////*/
 
 nav {
   font-size: 0.9rem;
@@ -281,7 +395,6 @@ header::after {
 
 .header-headings-container {
   align-items: flex-start;
-  width: 40%; /* Continue from here//////////////////////////////////////////////////// */
 }
 
 .header-headings-container p {
@@ -289,7 +402,6 @@ header::after {
 }
 
 .header-headings-container button {
-  background-color: #FF595E;
   border: 0;
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.33);
   font-size: 1rem;
@@ -308,12 +420,6 @@ header::after {
 
 .header-image-container {
   align-items: flex-end;
-  width: 40%;
-}
-
-.header-image-container img {
-  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
-  width: 380px;
 }
 
 /* HEADER END ////////////////////////////////////////// */
@@ -322,24 +428,13 @@ header::after {
 
 #about {
   height: 1050px;
-  padding: 100px 0;
 }
 
 #about article {
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 100px;
 }
 
-.about-image-container {
-  width: 50%;
-}
-
-.about-image-container img {
-  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
-  width: 380px;
-}
-
+.about-image-container,
 .about-paragraphs-container {
   width: 50%;
 }
@@ -349,19 +444,12 @@ header::after {
   margin-bottom: 30px;
 }
 
-.about-paragraphs-container p:last-child {
-  margin-bottom: 0;
-}
-
 #about span {
   font-weight: 100;
-  font-style: italic;
 }
 
 #about i {
-  color: #FF595E;
   font-size: 4rem;
-  margin-right: 40px;
   opacity: 0.7;
 }
 
@@ -374,22 +462,8 @@ header::after {
   height: 520px;
 }
 
-#skills::before {
-  background: url('../img/skills-top-edge.png') no-repeat center/cover;
-  top: -74px;
-}
-
 #skills::after {
-  background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   top: 520px;
-}
-
-#skills h2 {
-  margin: 0 auto 50px auto;
-}
-
-#skills-container {
-  justify-content: space-between;
 }
 
 .skills-card-wrapper {
@@ -398,14 +472,14 @@ header::after {
 }
 
 .skills-card {
-  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
   cursor: col-resize;
   height: 360px;
   transform-style: preserve-3d;
   transition: transform 1s;
 }
 
-.skills-card:hover {
+.skills-card:hover,
+.skills-card-back {
   transform: rotateY(-180deg);
 }
 
@@ -416,7 +490,6 @@ header::after {
 }
 
 .skills-card-front {
-  background-color: #FFCA3A;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20% 20%;
@@ -424,19 +497,12 @@ header::after {
 
 .skills-card-back {
   background: linear-gradient(#ffda7f, #ffcf56);
-  font-weight: 500;
   padding: 16px;
-  text-transform: uppercase;
-  transform: rotateY(-180deg);
 }
 
 .skills-card-back li {
   cursor: default;
   padding: 8px;
-}
-
-.skills-card-back li:hover {
-  transform: scale(1.1);
 }
 
 .skills-card-back li:nth-child(odd) {
@@ -468,58 +534,34 @@ header::after {
   padding-top: 100px;
 }
 
-#experience h2 {
-  margin: 0 auto 50px auto;
-}
-
 .experience-boxes {
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 60%;
 }
 
 .experience-boxes fieldset {
   background: linear-gradient(#3E9DD5, #1489CC);
   height: 165px;
-  padding: 20px;
-  text-align: right;
-  text-transform: uppercase;
   width: 320px;
 }
 
 .experience-boxes fieldset::after {
-  background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   left: 0;
   top: 165px;
 }
 
 .experience-boxes legend {
-  background: #FFCA3A;
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   width: 218px;
-}
-
-.experience-boxes fieldset:nth-of-type(1) legend {
-  background-color: #FF595E;
-}
-
-.experience-boxes legend:hover {
-  transform: scale(1.1);
 }
 
 .experience-boxes p {
   padding: 10px;
 }
 
-.experience-boxes i {
-  font-size: 3rem;
-}
-
 .fa-angle-double-up {
   margin-right: calc(160px - 1.5rem);
   padding: 40px 0;
-  text-align: right;
 }
 
 /* EXPERIENCE END /////////////////////////////////////////////// */
@@ -528,23 +570,12 @@ header::after {
 
 #education {
   background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
-  flex-wrap: wrap;
   height: 680px;
   padding-bottom: 100px;
 }
 
-#education::before {
-  background: url('../img/skills-top-edge.png') no-repeat center/cover;
-  top: -74px;
-}
-
 #education::after {
-  background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
   top: 680px;
-}
-
-.education-boxes {
-  width: 40%;
 }
 
 .education-boxes div {
@@ -552,46 +583,24 @@ header::after {
   margin-bottom: 60px;
 }
 
-.education-boxes div:last-child {
-  margin-bottom: 0;
-}
-
 .education-boxes i {
-  margin-right: 40px;
   width: 40px;
 }
 
-.education-boxes h3 {
+.education-boxes h3,
+#courses-carousel {
   font-size: 1.5rem;
-}
-
-.courses-box {
-  width: 40%;
 }
 
 #courses-carousel {
   background-color: #1489cc50;
   box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.75);
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-#courses-carousel h3 {
-  font-size: 1.5rem;
 }
 
 #courses-carousel div {
   border: solid 5px #1489cc;
   box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.66);
   margin-bottom: 20px;
-}
-
-#courses-carousel i {
-  transition: transform 0.1s;
-}
-
-#courses-carousel i:hover {
-  transform: scale(1.5);
 }
 
 #courses-carousel-card img {
@@ -605,8 +614,6 @@ header::after {
 
 #courses-carousel-card p:last-child {
   font-size: 1.125rem;
-  font-style: italic;
-  font-weight: 500;
   height: 25px;
 }
 
@@ -616,7 +623,6 @@ header::after {
 
 #contact {
   height: 500px;
-  padding: 100px 0;
 }
 
 /* CONTACT END /////////////////////////////////////////////// */
@@ -627,13 +633,11 @@ header::after {
 .nav-fixed {
   height: 100vh;
   left: 90%;
-  position: fixed;
   width: 10%;
 }
 
 .nav-fixed ul {
   height: 60%;
-  justify-content: space-between;
 }
 
 .nav-fixed li {
@@ -642,11 +646,8 @@ header::after {
 
 #nav-menu-icon {
   box-shadow: 0 2px 5px -1px rgba(0,0,0,0.50);
-  display: none;
-  font-size: 3rem;
   left: calc(90% - 2rem);
   padding: 5px 10px;
-  position: fixed;
   top: 1.5rem;
   z-index: 9;
   transition: left 0.5s, opacity 0.5s, background-color 0.2s;
@@ -656,11 +657,16 @@ header::after {
   background-color: #3E9DD5;
 }
 
-#nav-close-icon {
-  color: #FF595E;
-  display: none;
-}
-
 .nav-mobile {
   left: 80%;
+}
+
+.nav-fixed,
+#nav-menu-icon {
+  position: fixed;
+}
+
+#nav-menu-icon,
+#nav-close-icon {
+  display: none;
 }
