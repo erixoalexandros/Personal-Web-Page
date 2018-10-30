@@ -53,34 +53,34 @@ window.addEventListener('load', function () {//Load Page first
     if (innerWidth <= 750) {
 
       experience.innerHTML = `
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2006 - 2009</legend>
                     <p>Intranet Webmaster</p>
                     <p>Military Academy</p>
                     <p>Havana, Cuba</p>
                 </fieldset>
 
-                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>
 
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2010 - 2015</legend>
                     <p>Network Administrator</p>
                     <p>Historian's Office Of Havana</p>
                     <p>Havana, Cuba</p>
                 </fieldset>
 
-                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>
 
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2016 - Present</legend>
                     <p>IT Specialist</p>
                     <p>San Jose Clinic</p>
                     <p>Houston, TX</p>
                 </fieldset>
 
-                <i class="fas fa-angle-double-down"></i>     
+                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>     
                 
-                <div class="web-dev-animation">
+                <div class="web-dev-animation" data-aos="fade-up">
                     <img class="static" src="img/web-dev-animation/web-development.svg">
                     <img class="nut" src="img/web-dev-animation/nut.svg">
                     <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
@@ -97,7 +97,7 @@ window.addEventListener('load', function () {//Load Page first
 
     } else {
       experience.innerHTML = `
-                <div class="web-dev-animation">
+                <div class="web-dev-animation" data-aos="fade-up">
                     <img class="static" src="img/web-dev-animation/web-development.svg">
                     <img class="nut" src="img/web-dev-animation/nut.svg">
                     <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
@@ -112,27 +112,27 @@ window.addEventListener('load', function () {//Load Page first
                     <img class="pen" src="img/web-dev-animation/pen.svg">
                 </div>
 
-                <i class="fas fa-angle-double-left"></i>
+                <i class="fas fa-angle-double-left" data-aos="fade-up"></i>
 
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2016 - Present</legend>
                     <p>IT Specialist</p>
                     <p>San Jose Clinic</p>
                     <p>Houston, TX</p>
                 </fieldset>
 
-                <i class="fas fa-angle-double-up"></i>
+                <i class="fas fa-angle-double-up" data-aos="fade-up"></i>
 
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2006 - 2009</legend>
                     <p>Intranet Webmaster</p>
                     <p>Military Academy</p>
                     <p>Havana, Cuba</p>
                 </fieldset>
 
-                <i class="fas fa-angle-double-right"></i>
+                <i class="fas fa-angle-double-right" data-aos="fade-up"></i>
 
-                <fieldset>
+                <fieldset data-aos="fade-up">
                     <legend>2010 - 2015</legend>
                     <p>Network Administrator</p>
                     <p>Historian's Office Of Havana</p>
@@ -279,5 +279,7 @@ window.addEventListener('load', function () {//Load Page first
     changeCourseInfo();
     
   });
+
+  AOS.init();
 
 });

@@ -4,74 +4,259 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0E476B;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
 
 #wrapper {
-  background-attachment: fixed;
   background-color: #EAF3F9;
   background-image: url('../img/bg-pattern.svg');
-  color: #0E476B;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
-  margin: auto;
-  position: relative;
-  width: 80%;
 }
 
 a {
-  color: #fff;
-  cursor: pointer;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-a:visited {
+h2 {
+  margin-bottom: 50px;
+}
+
+/* SHARED PROPERTIES ///////////////////////////////////////////*/
+
+body,
+.skills-card-back li:nth-child(odd) {
+  background-color: #0E476B;
+}
+
+#wrapper,
+.skills-card-back li:nth-child(even),
+.experience-boxes legend {
+  color: #0E476B;
+}
+
+#wrapper,
+#about,
+#skills-container,
+.experience-boxes,
+#courses-carousel i,
+#contact {
+  margin: auto;
+}
+
+#wrapper,
+header,
+#skills,
+.skills-card,
+.experience-boxes fieldset,
+#education {
+  position: relative;
+}
+
+#wrapper,
+nav ul,
+#about,
+#skills h2,
+#skills-container,
+#experience h2,
+#education h2,
+#contact {
+  width: 80%;
+}
+
+a,
+a:visited,
+nav,
+header,
+.header-headings-container button,
+#skills h2,
+.experience-boxes fieldset,
+.experience-boxes fieldset:nth-of-type(1) legend,
+#education,
+#education h2,
+#nav-menu-icon {
   color: #fff;
 }
 
-a:hover {
+a,
+.header-headings-container button {
+  cursor: pointer;
+}
+
+a:hover,
+.header-headings-container span,
+.education-boxes h3,
+#courses-carousel h3,
+#nav-close-icon:hover {
   color: #FFCA3A;
 }
 
-h2 {
+h2,
+.experience-boxes i {
   color: #1489CC;
+}
+
+h2,
+#about span {
   font-size: 2.5rem;
-  margin-bottom: 50px;
+}
+
+nav,
+nav ul,
+header,
+.header-headings-container,
+.header-image-container,
+#about article,
+#about span,
+#skills-container,
+.skills-card-back,
+.experience-boxes,
+#education,
+.courses-box,
+#courses-carousel {
+  display: flex;
+}
+
+nav,
+header,
+.header-headings-container,
+#about span,
+.skills-card-back,
+#education,
+#courses-carousel {
+  justify-content: center;
+}
+
+nav,
+header::before,
+header::after,
+#skills::before,
+#skills::after,
+.skills-card div,
+.skills-card ul,
+.experience-boxes fieldset::after,
+#education::before,
+#education::after {
+  position: absolute;
+}
+
+nav,
+.skills-card-back,
+.education-boxes i,
+#courses-carousel div {
+  text-align: center;
+}
+
+nav,
+header::before,
+header::after,
+#about h2,
+#skills::before,
+#skills::after,
+.skills-card div,
+.skills-card ul,
+.skills-card-back li,
+.experience-boxes fieldset::after,
+.fa-angle-double-up,
+#education::before,
+#education::after,
+#courses-carousel,
+#courses-carousel div,
+#courses-carousel-card img {
+  width: 100%;
+}
+
+nav,
+.header-image-container img,
+.skills-card-wrapper,
+.courses-box {
+  z-index: 1;
+}
+
+nav ul, 
+#about article,
+#about span,
+.experience-boxes,
+.nav-fixed {
+  align-items: center;
+}
+
+nav ul,
+.header-image-container,
+.courses-box {
+  justify-content: flex-end;
+}
+
+nav li,
+.skills-card {
+  user-select: none;
+}
+
+nav i,
+.about-paragraphs-container,
+.experience-boxes legend,
+.education-boxes p,
+#courses-carousel div {
+  font-size: 1.25rem;
+}
+
+nav i,
+#courses-carousel h3 {
+  margin-bottom: 15px;
+}
+
+header,
+#courses-carousel div,
+#nav-menu-icon {
+  background-color: #1489CC;
+}
+
+header::before,
+header::after,
+#skills::before,
+#skills::after,
+.experience-boxes fieldset::after,
+#education::before,
+#education::after {
+  content: '';
+}
+
+header::after,
+#skills::before,
+#skills::after,
+.experience-boxes fieldset::after,
+#education::before,
+#education::after {
+  height: 74px;
+}
+
+.header-headings-container,
+.skills-card-back,
+.nav-fixed ul {
+  flex-direction: column;
+}
+
+.header-headings-container, 
+#courses-carousel i {
+  font-size: 2rem;
 }
 
 /* NAV BAR */
 
 nav {
-  color: #fff;
-  display: flex;
   font-size: 0.9rem;
   height: 100px;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-}
-
-nav ul {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
 }
 
 nav li {
   margin-left: 60px;
-  user-select: none;
-}
-
-nav i {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
 }
 
 /* NAV BAR END */
@@ -79,56 +264,34 @@ nav i {
 /* HEADER ///////////////////////////////////////////// */
 
 header {
-  background-color: #1489CC;
   background: linear-gradient(#0E476B00, #1489CC), url('../img/bg-pattern2.png');
-  display: flex;
-  color: #fff;
   height: 650px;
-  justify-content: center;
-  position: relative;
 }
 
 header::before {
   background: url('../img/header-top-edge.png') no-repeat center/cover;
-  content: '';
   height: 135px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
+  top: 0;
 }
 
 header::after {
   background: url('../img/header-bottom-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   top: 650px;
-  width: 100%;
 }
 
 .header-headings-container {
   align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  justify-content: center;
-  width: 40%;
+  width: 40%; /* Continue from here//////////////////////////////////////////////////// */
 }
 
 .header-headings-container p {
   margin-bottom: 40px;
 }
 
-.header-headings-container span {
-  color: #FFCA3A;
-}
-
 .header-headings-container button {
   background-color: #FF595E;
   border: 0;
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.33);
-  color: #fff;
-  cursor: pointer;
   font-size: 1rem;
   outline: none;
   padding: 12px 24px;
@@ -145,15 +308,12 @@ header::after {
 
 .header-image-container {
   align-items: flex-end;
-  display: flex;
-  justify-content: flex-end;
   width: 40%;
 }
 
 .header-image-container img {
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
   width: 380px;
-  z-index: 1;
 }
 
 /* HEADER END ////////////////////////////////////////// */
@@ -162,21 +322,13 @@ header::after {
 
 #about {
   height: 1050px;
-  margin: auto;
   padding: 100px 0;
-  width: 80%;
 }
 
 #about article {
-  align-items: center;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
-}
-
-#about h2 {
-  width: 100%;
 }
 
 .about-image-container {
@@ -189,7 +341,6 @@ header::after {
 }
 
 .about-paragraphs-container {
-  font-size: 1.25rem;
   width: 50%;
 }
 
@@ -203,12 +354,8 @@ header::after {
 }
 
 #about span {
-  align-items: center;
-  display: flex;
-  font-size: 2.5rem;
   font-weight: 100;
   font-style: italic;
-  justify-content: center;
 }
 
 #about i {
@@ -225,54 +372,37 @@ header::after {
 #skills {
   background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
   height: 520px;
-  position: relative;
 }
 
 #skills::before {
   background: url('../img/skills-top-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   top: -74px;
-  width: 100%;
 }
 
 #skills::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   top: 520px;
-  width: 100%;
 }
 
 #skills h2 {
-  color: #fff;
   margin: 0 auto 50px auto;
-  width: 80%;
 }
 
 #skills-container {
-  display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 80%;
 }
 
 .skills-card-wrapper {
   perspective: 1000px;
   width: 22%;
-  z-index: 1;
 }
 
 .skills-card {
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.75);
   cursor: col-resize;
   height: 360px;
-  position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
-  user-select: none;
 }
 
 .skills-card:hover {
@@ -283,8 +413,6 @@ header::after {
 .skills-card ul {
   backface-visibility: hidden;
   height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 .skills-card-front {
@@ -296,12 +424,8 @@ header::after {
 
 .skills-card-back {
   background: linear-gradient(#ffda7f, #ffcf56);
-  display: flex;
-  flex-direction: column;
   font-weight: 500;
-  justify-content: center;
   padding: 16px;
-  text-align: center;
   text-transform: uppercase;
   transform: rotateY(-180deg);
 }
@@ -309,7 +433,6 @@ header::after {
 .skills-card-back li {
   cursor: default;
   padding: 8px;
-  width: 100%;
 }
 
 .skills-card-back li:hover {
@@ -317,12 +440,7 @@ header::after {
 }
 
 .skills-card-back li:nth-child(odd) {
-  background-color: #0E476B;
   color: #ffda7f;
-}
-
-.skills-card-back li:nth-child(even) {
-  color: #0E476B;
 }
 
 .skills-card-web {
@@ -352,24 +470,18 @@ header::after {
 
 #experience h2 {
   margin: 0 auto 50px auto;
-  width: 80%;
 }
 
 .experience-boxes {
-  align-items: center;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
   width: 60%;
 }
 
 .experience-boxes fieldset {
   background: linear-gradient(#3E9DD5, #1489CC);
-  color: #fff;
   height: 165px;
   padding: 20px;
-  position: relative;
   text-align: right;
   text-transform: uppercase;
   width: 320px;
@@ -377,27 +489,19 @@ header::after {
 
 .experience-boxes fieldset::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   left: 0;
   top: 165px;
-  width: 100%;
 }
 
 .experience-boxes legend {
   background: #FFCA3A;
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
-  color: #0E476B;
-  font-size: 1.25rem;
   padding: 10px 20px;
-  text-align: center;
   width: 218px;
 }
 
 .experience-boxes fieldset:nth-of-type(1) legend {
   background-color: #FF595E;
-  color: #fff;
 }
 
 .experience-boxes legend:hover {
@@ -409,7 +513,6 @@ header::after {
 }
 
 .experience-boxes i {
-  color: #1489CC;
   font-size: 3rem;
 }
 
@@ -417,7 +520,6 @@ header::after {
   margin-right: calc(160px - 1.5rem);
   padding: 40px 0;
   text-align: right;
-  width: 100%;
 }
 
 /* EXPERIENCE END /////////////////////////////////////////////// */
@@ -426,36 +528,19 @@ header::after {
 
 #education {
   background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
-  color: #fff;
-  display: flex;
   flex-wrap: wrap;
   height: 680px;
-  justify-content: center;
   padding-bottom: 100px;
-  position: relative;
 }
 
 #education::before {
   background: url('../img/skills-top-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   top: -74px;
-  width: 100%;
 }
 
 #education::after {
   background: url('../img/skills-bottom-edge.png') no-repeat center/cover;
-  content: '';
-  height: 74px;
-  position: absolute;
   top: 680px;
-  width: 100%;
-}
-
-#education h2 {
-  color: #fff;
-  width: 80%;
 }
 
 .education-boxes {
@@ -473,55 +558,35 @@ header::after {
 
 .education-boxes i {
   margin-right: 40px;
-  text-align: center;
   width: 40px;
 }
 
 .education-boxes h3 {
-  color: #FFCA3A;
   font-size: 1.5rem;
 }
 
-.education-boxes p {
-  font-size: 1.25rem;
-}
-
 .courses-box {
-  display: flex;
-  justify-content: flex-end;
   width: 40%;
-  z-index: 1;
 }
 
 #courses-carousel {
   background-color: #1489cc50;
   box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.75);
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 20px;
-  width: 100%;
 }
 
 #courses-carousel h3 {
   font-size: 1.5rem;
-  color: #FFCA3A;
-  margin-bottom: 15px;
 }
 
 #courses-carousel div {
-  background-color: #1489cc;
   border: solid 5px #1489cc;
   box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.66);
-  font-size: 1.25rem;
   margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
 }
 
 #courses-carousel i {
-  font-size: 2rem;
-  margin: auto;
   transition: transform 0.1s;
 }
 
@@ -531,7 +596,6 @@ header::after {
 
 #courses-carousel-card img {
   transition: opacity 1.5s;
-  width: 100%;
 }
 
 #courses-carousel-card p {
@@ -552,9 +616,7 @@ header::after {
 
 #contact {
   height: 500px;
-  margin: auto;
   padding: 100px 0;
-  width: 80%;
 }
 
 /* CONTACT END /////////////////////////////////////////////// */
@@ -563,7 +625,6 @@ header::after {
 /* DYNAMIC ATTRIBUTES */
 
 .nav-fixed {
-  align-items: center;
   height: 100vh;
   left: 90%;
   position: fixed;
@@ -571,7 +632,6 @@ header::after {
 }
 
 .nav-fixed ul {
-  flex-direction: column;
   height: 60%;
   justify-content: space-between;
 }
@@ -581,9 +641,7 @@ header::after {
 }
 
 #nav-menu-icon {
-  background-color: #1489cc;
   box-shadow: 0 2px 5px -1px rgba(0,0,0,0.50);
-  color: #fff;
   display: none;
   font-size: 3rem;
   left: calc(90% - 2rem);
@@ -601,10 +659,6 @@ header::after {
 #nav-close-icon {
   color: #FF595E;
   display: none;
-}
-
-#nav-close-icon:hover {
-  color: #FFCA3A;
 }
 
 .nav-mobile {
