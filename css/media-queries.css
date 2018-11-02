@@ -605,7 +605,7 @@
   }
 
   #contact {
-    height: 780px;
+    height: 850px;
     width: 80%;
   }
 
@@ -747,6 +747,10 @@
 
   #courses-carousel div {
     font-size: 1rem;
+  }
+
+  #contact {
+    height: 800px;
   }
 
 }
