@@ -622,7 +622,11 @@ header::after {
 /* CONTACT /////////////////////////////////////////////// */
 
 #contact {
-  height: 800px;
+  height: 850px;
+}
+
+#contact h2 {
+  margin-bottom: 50px;
 }
 
 #contact form {
@@ -631,21 +635,11 @@ header::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
+  height: 500px;
   margin: auto;
   padding: 0 60px;
   position: relative;
   width: 50%;
-}
-
-#contact form::before {
-  background: url('../img/skills-top-edge.png') no-repeat center/cover;
-  content: "";
-  height: 74px;
-  left: 0;
-  position: absolute;
-  top: -74px;
-  width: 100%;
 }
 
 #contact form::after {
@@ -654,12 +648,7 @@ header::after {
   height: 74px;
   left: 0;
   position: absolute;
-  top: 400px;
-  width: 100%;
-}
-
-#contact h2 {
-  margin-bottom: 50px;
+  top: 500px;
   width: 100%;
 }
 
@@ -667,12 +656,26 @@ header::after {
   margin-bottom: 5px;
 }
 
-#contact input, #contact-message {
+#contact-name,
+#contact-email,
+#contact-message {
+  background-color: #EAF3F9;
+  border: none;
+  box-shadow: 0 1px 10px 2px #0E476B80;
   margin-bottom: 30px;
   padding: 5px;
 }
 
-#contact input[type= 'submit'] {
+#contact input:focus, #contact-message:focus {
+  outline: 2px solid #FFCA3A;
+}
+
+#contact-message {
+  font-family: inherit;
+  resize: none;
+}
+
+#contact input[type='submit'] {
   align-self: flex-end;
   background-color: #FF595E;
   border: none;

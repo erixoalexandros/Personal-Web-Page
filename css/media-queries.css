@@ -207,6 +207,14 @@
   .education-boxes {
     width: 50%;
   }
+
+  #contact {
+    width: 90%;
+  }
+
+  #contact form {
+    width: 60%;
+  }
   
 }
 
@@ -385,6 +393,10 @@
   #courses-carousel-card p:last-child {
     font-size: 1rem;
     height: 20px;
+  }
+
+  #contact form {
+    width: 80%;
   }
 
 }
@@ -590,6 +602,21 @@
 
   #courses-carousel h3 {
     font-size: 1.125rem;
+  }
+
+  #contact {
+    height: 780px;
+    width: 80%;
+  }
+
+  #contact form {
+    height: 450px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  #contact form::after {
+    top: 450px;
   }
 
 }
