@@ -17,6 +17,7 @@
 @media all and (max-width: 1500px) {
 
   #wrapper {
+    -webkit-box-shadow: none;
     box-shadow: none;
     width: 100%;
   }
@@ -36,6 +37,7 @@
   .nav-fixed {
     background-image: url('../img/bg-pattern2.png');
     left: 100%;
+    -webkit-transition: left 0.5s;
     transition: left 0.5s;
     z-index: 1000;
   }
@@ -46,8 +48,12 @@
     height: 50px;
     left: -25px;
     position: absolute;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     width: 50px;
     z-index: -1;
   }
@@ -57,6 +63,7 @@
   }
 
   .nav-fixed:hover::before {
+    -webkit-transform: rotate(0deg) translate(50px);
     transform: rotate(0deg) translate(50px);
   }
 
@@ -106,6 +113,8 @@
   }
 
   #about article {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 50px;
   }
@@ -131,7 +140,7 @@
   #about span {
     font-size: 2rem;
   }
-  
+
   #about i {
     font-size: 3rem;
   }
@@ -173,7 +182,7 @@
     width: 90%;
   }
 
-  .experience-boxes fieldset {   
+  .experience-boxes fieldset {
     height: 150px;
     padding: 10px;
     width: 300px;
@@ -199,7 +208,7 @@
   #education::after {
     top: 600px;
   }
-  
+
   #education h2 {
     width: 90%;
   }
@@ -215,7 +224,7 @@
   #contact form {
     width: 60%;
   }
-  
+
 }
 
 /*//////////////////////////////////////*/
@@ -243,16 +252,18 @@
   nav {
     height: 70px;
   }
-  
+
   nav ul {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 90%;
   }
-  
+
   nav li {
     margin-left: 0;
   }
-  
+
   nav i {
     margin-bottom: 10px;
   }
@@ -266,14 +277,19 @@
   .nav-fixed::before {
     background-color: rgba(14, 71, 107, 0);
   }
-  
+
   .nav-fixed:hover {
     left: 0;
   }
-  
+
   .nav-fixed ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     height: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 90%;
   }
@@ -287,6 +303,8 @@
   }
 
   #about article {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -298,15 +316,15 @@
     line-height: 25px;
     margin-bottom: 20px;
   }
-  
+
   .about-image-container img {
     width: 250px;
   }
-  
+
   #about span {
     font-size: 1.8rem;
   }
-  
+
   #about i {
     font-size: 2.5rem;
     margin-right: 20px;
@@ -352,7 +370,7 @@
   #education::after {
     top: 500px;
   }
-  
+
   .education-boxes div {
     line-height: 40px;
     margin-bottom: 30px;
@@ -380,8 +398,9 @@
     font-size: 1.125rem;
     margin-bottom: 10px;
   }
-  
+
   #courses-carousel i:hover {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 
@@ -389,7 +408,7 @@
     height: 40px;
     margin: 10px 0;
   }
-  
+
   #courses-carousel-card p:last-child {
     font-size: 1rem;
     height: 20px;
@@ -397,6 +416,23 @@
 
   #contact form {
     width: 80%;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  footer img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  footer p {
+    margin-right: 10px;
+  }
+
+  footer i {
+    font-size: 1rem;
   }
 
 }
@@ -413,13 +449,18 @@
     height: 100%;
     left: 100%;
     position: fixed;
+    -webkit-transition: left 0.5s;
     transition: left 0.5s;
     width: 20%;
     z-index: 10;
   }
 
-  nav ul{
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
@@ -443,8 +484,10 @@
   header::after {
     top: 400px;
   }
-  
+
   .header-headings-container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     font-size: 1.75rem;
     width: 80%;
@@ -453,7 +496,7 @@
   .header-headings-container button {
     font-size: 1.125rem;
   }
-  
+
   .header-headings-container i {
     margin-right: 20px;
   }
@@ -487,6 +530,8 @@
   #about span {
     font-size: 1.1rem;
     font-weight: 500;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -510,6 +555,7 @@
   }
 
   #skills-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 80%;
   }
@@ -522,7 +568,7 @@
   .skills-card-back {
     padding: 25px;
   }
-  
+
   #experience {
     height: 1650px;
     padding-top: 100px;
@@ -532,7 +578,7 @@
     width: 80%;
   }
 
-  .experience-boxes { 
+  .experience-boxes {
     margin: auto;
     width: 80%;
   }
@@ -565,7 +611,7 @@
   }
 
   .fa-angle-double-up {
-    padding: 0; 
+    padding: 0;
   }
 
   #education {
@@ -619,6 +665,37 @@
     top: 450px;
   }
 
+  footer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 0.7rem;
+    height: 150px;
+  }
+
+  footer div {
+    border-bottom: 1px dotted #FFCA3A;
+    height: 60px;
+    width: 80%;
+  }
+
+  footer div:last-child {
+    border-bottom: none;
+  }
+
+  footer img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  footer p {
+    margin-right: 12px;
+  }
+
 }
 
 @media all and (max-width: 500px) {
@@ -653,8 +730,12 @@
   }
 
   .header-headings-container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     font-size: 1.5rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
