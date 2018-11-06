@@ -610,6 +610,34 @@
     width: 100%;
   }
 
+  .experience-one {
+    order: 7;
+  }
+  
+  .experience-two {
+    order:1;
+  }
+  
+  .experience-three {
+    order: 4;
+  }
+  
+  .experience-four {
+    order: 3;
+  }
+  
+  .experience-five {
+    order: 0;
+  }
+  
+  .experience-six {
+    order: 5;
+  }
+  
+  .experience-seven {
+    order: 2;
+  }
+
   .fa-angle-double-up {
     padding: 0;
   }

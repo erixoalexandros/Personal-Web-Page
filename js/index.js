@@ -8,7 +8,7 @@ window.addEventListener('load', function () {//Load Page first
   var navIcon = document.getElementById('nav-menu-icon');
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
-  var experience = document.getElementsByClassName('experience-boxes')[0];
+  var experiencesArrows = Array.prototype.slice.call(document.querySelectorAll('.experience-boxes i'));
   var courseArrows = document.querySelectorAll('#courses-carousel i');
   var nextCourse = courseArrows[1];
   var previousCourse = courseArrows[0];
@@ -48,99 +48,47 @@ window.addEventListener('load', function () {//Load Page first
 
   }
 
+  var arrow = [];
+
   function changeExperienceToMobile() {
+
+    var counter = 0;
 
     if (innerWidth <= 750) {
 
-      experience.innerHTML = `
-                <fieldset data-aos="fade-up">
-                    <legend>2006 - 2009</legend>
-                    <p>Intranet Webmaster</p>
-                    <p>Military Academy</p>
-                    <p>Havana, Cuba</p>
-                </fieldset>
+      experiencesArrows.forEach(function(element) {
 
-                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>
+        arrow.push(element.classList.item(1));
 
-                <fieldset data-aos="fade-up">
-                    <legend>2010 - 2015</legend>
-                    <p>Network Administrator</p>
-                    <p>Historian's Office Of Havana</p>
-                    <p>Havana, Cuba</p>
-                </fieldset>
+        if (element.classList.contains('fa-angle-double-left')) {
+          element.classList.remove('fa-angle-double-left');
+          element.classList.add('fa-angle-double-down');
+        } else if (element.classList.contains('fa-angle-double-right')) {
+          element.classList.remove('fa-angle-double-right');
+          element.classList.add('fa-angle-double-down');
+        } else if (element.classList.contains('fa-angle-double-up')) {
+          element.classList.remove('fa-angle-double-up');
+          element.classList.add('fa-angle-double-down');
+        }
 
-                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>
-
-                <fieldset data-aos="fade-up">
-                    <legend>2016 - Present</legend>
-                    <p>IT Specialist</p>
-                    <p>San Jose Clinic</p>
-                    <p>Houston, TX</p>
-                </fieldset>
-
-                <i class="fas fa-angle-double-down" data-aos="fade-up"></i>     
-                
-                <div class="web-dev-animation" data-aos="fade-up">
-                    <img class="static" src="img/web-dev-animation/web-development.svg">
-                    <img class="nut" src="img/web-dev-animation/nut.svg">
-                    <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
-                    <img class="ball green" src="img/web-dev-animation/green-ball.svg">
-                    <img class="ball blue" src="img/web-dev-animation/blue-ball.svg">
-                    <img class="ball red" src="img/web-dev-animation/red-ball.svg">
-                    <img class="light-bulb" src="img/web-dev-animation/light-bulb.svg">
-                    <img class="planet" src="img/web-dev-animation/planet.svg">
-                    <img class="angle-bracket" src="img/web-dev-animation/angle-bracket.svg">
-                    <img class="closed-tag" src="img/web-dev-animation/closed-tag.svg">
-                    <img class="rule" src="img/web-dev-animation/rule.svg">
-                    <img class="pen" src="img/web-dev-animation/pen.svg">
-                </div>`;
+      });
 
     } else {
-      experience.innerHTML = `
-                <div class="web-dev-animation" data-aos="fade-up">
-                    <img class="static" src="img/web-dev-animation/web-development.svg">
-                    <img class="nut" src="img/web-dev-animation/nut.svg">
-                    <img class="ball yellow" src="img/web-dev-animation/yellow-ball.svg">
-                    <img class="ball green" src="img/web-dev-animation/green-ball.svg">
-                    <img class="ball blue" src="img/web-dev-animation/blue-ball.svg">
-                    <img class="ball red" src="img/web-dev-animation/red-ball.svg">
-                    <img class="light-bulb" src="img/web-dev-animation/light-bulb.svg">
-                    <img class="planet" src="img/web-dev-animation/planet.svg">
-                    <img class="angle-bracket" src="img/web-dev-animation/angle-bracket.svg">
-                    <img class="closed-tag" src="img/web-dev-animation/closed-tag.svg">
-                    <img class="rule" src="img/web-dev-animation/rule.svg">
-                    <img class="pen" src="img/web-dev-animation/pen.svg">
-                </div>
 
-                <i class="fas fa-angle-double-left" data-aos="fade-up"></i>
+      experiencesArrows.forEach(function(element) {
 
-                <fieldset data-aos="fade-up">
-                    <legend>2016 - Present</legend>
-                    <p>IT Specialist</p>
-                    <p>San Jose Clinic</p>
-                    <p>Houston, TX</p>
-                </fieldset>
+        if (element.classList.contains('fa-angle-double-down')) {
+          element.classList.remove('fa-angle-double-down');
+          element.classList.add(arrow[counter]);
+        }
 
-                <i class="fas fa-angle-double-up" data-aos="fade-up"></i>
+        counter++;
 
-                <fieldset data-aos="fade-up">
-                    <legend>2006 - 2009</legend>
-                    <p>Intranet Webmaster</p>
-                    <p>Military Academy</p>
-                    <p>Havana, Cuba</p>
-                </fieldset>
+      });
 
-                <i class="fas fa-angle-double-right" data-aos="fade-up"></i>
-
-                <fieldset data-aos="fade-up">
-                    <legend>2010 - 2015</legend>
-                    <p>Network Administrator</p>
-                    <p>Historian's Office Of Havana</p>
-                    <p>Havana, Cuba</p>
-                </fieldset>`;
     }
-      
   }
+
 
   function afterpageLoaded() {
 
