@@ -73,6 +73,8 @@ window.addEventListener('load', function () {//Load Page first
 
       });
 
+      arrow = arrow.slice(0,3);
+      
     } else {
 
       experiencesArrows.forEach(function(element) {
@@ -88,7 +90,6 @@ window.addEventListener('load', function () {//Load Page first
 
     }
   }
-
 
   function afterpageLoaded() {
 

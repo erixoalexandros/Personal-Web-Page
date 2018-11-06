@@ -1,0 +1,45 @@
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  /* IE10+ specific styles go here */
+
+  .skills-card-wrapper {
+    perspective: 0;
+  }
+  
+  .skills-card {
+    cursor: default;
+    transform-style: unset;
+    transition: none;
+    transform: none;
+  }
+  
+  .skills-card:hover,
+  .skills-card-back {
+    transform: none;
+  }
+  
+  .skills-card-front {
+    background: none;
+  }
+  
+  .skills-card-web {
+    background-image: none;
+  }
+  
+  .skills-card-graphics {
+    background-image: none;
+  }
+  
+  .skills-card-tools {
+    background-image: none;
+  }
+  
+  .skills-card-personal {
+    background-image: none;
+  }
+
+  .angle-bracket {
+    animation: none;
+    left: 19%;
+  }
+
+}

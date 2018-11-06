@@ -1,7 +1,13 @@
 .web-dev-animation {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   overflow: hidden;
   width: 320px;
@@ -13,7 +19,8 @@
 }
 
 .nut {
-  animation: rotation 3s linear infinite;
+  -webkit-animation: rotation 3s linear infinite;
+          animation: rotation 3s linear infinite;
   height: 33%;
   left: 38%;
   position: absolute;
@@ -21,7 +28,8 @@
 }
 
 .light-bulb {
-  animation: luminance-intensity 0.6s linear infinite alternate;
+  -webkit-animation: luminance-intensity 0.6s linear infinite alternate;
+          animation: luminance-intensity 0.6s linear infinite alternate;
   height: 25%;
   left: 2.8%;
   position: absolute;
@@ -29,7 +37,8 @@
 }
 
 .planet {
-  animation: rotation 6s linear infinite reverse;
+  -webkit-animation: rotation 6s linear infinite reverse;
+          animation: rotation 6s linear infinite reverse;
   height: 20%;
   left: 79.8%;
   position: absolute;
@@ -37,7 +46,8 @@
 }
 
 .angle-bracket {
-  animation: move-right 3s linear infinite alternate;
+  -webkit-animation: move-right 3s linear infinite alternate;
+          animation: move-right 3s linear infinite alternate;
   height: 8%;
   left: 10%;
   position: absolute;
@@ -45,7 +55,8 @@
 }
 
 .closed-tag {
-  animation: showing-up-dots 3s linear infinite alternate;
+  -webkit-animation: showing-up-dots 3s linear infinite alternate;
+          animation: showing-up-dots 3s linear infinite alternate;
   height: 8%;
   left: 10%;
   opacity: 0;
@@ -54,7 +65,8 @@
 }
 
 .rule {
-  animation: move-up-down 2s linear infinite alternate;
+  -webkit-animation: move-up-down 2s linear infinite alternate;
+          animation: move-up-down 2s linear infinite alternate;
   height: 3%;
   left: 73%;
   position: absolute;
@@ -62,7 +74,8 @@
 }
 
 .pen {
-  animation: move-left-right 2s linear infinite alternate;
+  -webkit-animation: move-left-right 2s linear infinite alternate;
+          animation: move-left-right 2s linear infinite alternate;
   height: 18%;
   left: 84.5%;
   position: absolute;
@@ -70,7 +83,8 @@
 }
 
 .small-sizer {
-  animation: rotation 2s linear infinite alternate;
+  -webkit-animation: rotation 2s linear infinite alternate;
+          animation: rotation 2s linear infinite alternate;
   height: 11.6%;
   left: 90.9%;
   position: absolute;
@@ -78,10 +92,12 @@
 }
 
 .ball {
-  animation: change-color 0.7s linear infinite alternate;
+  -webkit-animation: change-color 0.7s linear infinite alternate;
+          animation: change-color 0.7s linear infinite alternate;
   height: 5.5%;
   position: absolute;
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .yellow {
@@ -106,53 +122,141 @@
 
 /* ANIMATIONS */
 
-@keyframes rotation {
+@-webkit-keyframes rotation {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes change-color {
+  from {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
 @keyframes change-color {
   from {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 
   to {
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@-webkit-keyframes luminance-intensity {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    opacity: 0.6;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
 @keyframes luminance-intensity {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   to {
     opacity: 0.6;
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  80% {
+    -webkit-transform: translateX(250%);
+            transform: translateX(250%);
+  }
+
+  100% {
+    -webkit-transform: translateX(250%);
+            transform: translateX(250%);
   }
 }
 
 @keyframes move-right {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   20% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   80% {
-    transform: translateX(250%);
+    -webkit-transform: translateX(250%);
+            transform: translateX(250%);
   }
 
   100% {
-    transform: translateX(250%);
+    -webkit-transform: translateX(250%);
+            transform: translateX(250%);
+  }
+}
+
+@-webkit-keyframes showing-up-dots {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -174,35 +278,82 @@
   }
 }
 
-@keyframes move-up-down {
+@-webkit-keyframes move-up-down {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   to {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes move-up-down {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes move-left-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  25% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  75% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes move-left-right {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   25% {
-    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
 
   50% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   75% {
-    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
   }
 
 
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }

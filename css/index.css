@@ -400,18 +400,20 @@ nav li {
 
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#0E476B00), to(#1489CC)), url('../img/bg-pattern2.png');
-  background: linear-gradient(#0E476B00, #1489CC), url('../img/bg-pattern2.png');
+  background: linear-gradient(rgba(14, 71, 107, 0), rgb(20, 137, 204)), url('../img/bg-pattern2.png');
   height: 650px;
 }
 
 header::before {
   background: url('../img/header-top-edge.png') no-repeat center/cover;
   height: 135px;
+  left: 0;
   top: 0;
 }
 
 header::after {
   background: url('../img/header-bottom-edge.png') no-repeat center/cover;
+  left: 0;
   top: 650px;
 }
 
@@ -487,8 +489,8 @@ header::after {
 /* SKILLS /////////////////////////////////////////////// */
 
 #skills {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0E476B), color-stop(#0E476B00), to(#1489CC)), url('../img/bg-pattern2.png');
-  background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(14, 71, 107)), color-stop(rgba(14, 71, 107, 0)), to(rgb(20, 137, 204))), url('../img/bg-pattern2.png');
+  background: linear-gradient(rgb(14, 71, 107), rgba(14, 71, 107, 0), rgb(20, 137, 204)), url('../img/bg-pattern2.png');
   height: 520px;
 }
 
@@ -533,8 +535,8 @@ header::after {
 }
 
 .skills-card-back {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffda7f), to(#ffcf56));
-  background: linear-gradient(#ffda7f, #ffcf56);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 218, 127)), to(rgb(255, 207, 86)));
+  background: linear-gradient(rgb(255, 218, 127), rgb(255, 207, 86));
   padding: 16px;
 }
 
@@ -577,8 +579,8 @@ header::after {
 }
 
 .experience-boxes fieldset {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3E9DD5), to(#1489CC));
-  background: linear-gradient(#3E9DD5, #1489CC);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(62, 157, 213)), to(rgb(20, 137, 204)));
+  background: linear-gradient(rgb(62, 157, 213), rgb(20, 137, 204));
   height: 165px;
   width: 320px;
 }
@@ -609,13 +611,18 @@ header::after {
 /* EDUCATION /////////////////////////////////////////////// */
 
 #education {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0E476B), color-stop(#0E476B00), to(#1489CC)), url('../img/bg-pattern2.png');
-  background: linear-gradient(#0E476B, #0E476B00, #1489CC), url('../img/bg-pattern2.png');
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(14, 71, 107)), color-stop(rgba(14, 71, 107, 0)), to(rgb(20, 137, 204))), url('../img/bg-pattern2.png');
+  background: linear-gradient(rgb(14, 71, 107), rgba(14, 71, 107, 0), rgb(20, 137, 204)), url('../img/bg-pattern2.png');
   height: 680px;
   padding-bottom: 100px;
 }
 
+#education::before {
+  left: 0;
+}
+
 #education::after {
+  left: 0;
   top: 680px;
 }
 
@@ -767,9 +774,6 @@ footer {
   display: flex;
   font-size: 0.8rem;
   height: 100px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
   position: relative;
 }
 
@@ -794,6 +798,7 @@ footer div {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 33.3%;
 }
 
 footer img {
