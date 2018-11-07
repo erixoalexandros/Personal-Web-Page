@@ -161,11 +161,11 @@ window.addEventListener('load', function () {//Load Page first
 
   var courses = [
     {
-      title: `Build Responsive Real World Websites`,
+      title: 'Build Responsive Real World Websites',
       source: 'Udemy'
     },
     {
-      title: `Responsive Website Development and Design Specialization`,
+      title: 'Responsive Website Development and Design Specialization',
       source: 'Coursera'
     },
     {
@@ -173,7 +173,7 @@ window.addEventListener('load', function () {//Load Page first
       source: 'Udemy'
     },
     {
-      title: `JavaScript: Understanding the Weird Parts`,
+      title: 'JavaScript: Understanding the Weird Parts',
       source: 'Udemy'
     },
     {
@@ -181,7 +181,7 @@ window.addEventListener('load', function () {//Load Page first
       source: 'Udemy'
     },
     {
-      title: `Web Design with HTML, CSS, JavaScript and jQuery`,
+      title: 'Web Design with HTML, CSS, JavaScript and jQuery',
       source: 'Jon Duckett Book Series'
     },
     {
@@ -197,10 +197,10 @@ window.addEventListener('load', function () {//Load Page first
   var currentImage = 0;
 
   function changeCourseInfo() {
-    courseImage.src = `http://127.0.0.1:5500/img/Course-${currentImage}.jpg`;
+    courseImage.src = 'http://127.0.0.1:5500/img/Course-' + currentImage + '.jpg';
     courseTitle.textContent = courses[currentImage].title;
     courseSource.textContent = courses[currentImage].source;
-    courseImage.alt = `${courses[currentImage].title} from ${courses[currentImage].source}`;
+    courseImage.alt = courses[currentImage].title + 'from' + courses[currentImage].source;
   }
 
   //When click right arrow to the next course 
