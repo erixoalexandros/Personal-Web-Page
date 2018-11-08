@@ -1,10 +1,10 @@
 'use strict';
 
-window.addEventListener('load', function () {//Load Page first
+window.addEventListener('load', function () { //Load Page first
 
   //DOM LOADER/////////////////////////////////////////////
   var nav = document.getElementsByTagName('nav')[0];
-  var navItems = Array.prototype.slice.call(nav.firstElementChild.children);//Convert node-list in an Array
+  var navItems = Array.prototype.slice.call(nav.firstElementChild.children); //Convert node-list in an Array
   var navIcon = document.getElementById('nav-menu-icon');
   var navCloseIcon = document.getElementById('nav-close-icon');
   var aboutPicture = document.querySelector('#about img');
@@ -17,26 +17,26 @@ window.addEventListener('load', function () {//Load Page first
   var courseSource = courseInfo[1];
   var courseImage = document.querySelector('#courses-carousel-card img');
   //DOM LOADER/////////////////////////////////////////////
-  
+
   function navBarBehavior() {
 
-    if (pageYOffset > 100 && innerWidth > 750) {//When nav bar is not visible at the top
+    if (pageYOffset > 100 && innerWidth > 750) { //When nav bar is not visible at the top
 
-      if (!nav.classList.contains('nav-fixed')) {//Fix the nav bar to the right
+      if (!nav.classList.contains('nav-fixed')) { //Fix the nav bar to the right
         nav.classList.add('nav-fixed');
       }
 
     } else {
 
-      if (nav.classList.contains('nav-fixed')) {//Unfix nav bar
-        nav.classList.remove('nav-fixed');   
-      }  
+      if (nav.classList.contains('nav-fixed')) { //Unfix nav bar
+        nav.classList.remove('nav-fixed');
+      }
 
     }
 
   }
 
-  function pictureOrientation () {// Control picture orientation
+  function pictureOrientation() { // Control picture orientation
 
     if (innerWidth <= 750 && innerWidth > 500) {
       aboutPicture.src = 'img/me-landscape.png';
@@ -56,7 +56,7 @@ window.addEventListener('load', function () {//Load Page first
 
     if (innerWidth <= 750) {
 
-      experiencesArrows.forEach(function(element) {
+      experiencesArrows.forEach(function (element) {
 
         arrow.push(element.classList.item(1));
 
@@ -73,11 +73,11 @@ window.addEventListener('load', function () {//Load Page first
 
       });
 
-      arrow = arrow.slice(0,3);
-      
+      arrow = arrow.slice(0, 3);
+
     } else {
 
-      experiencesArrows.forEach(function(element) {
+      experiencesArrows.forEach(function (element) {
 
         if (element.classList.contains('fa-angle-double-down')) {
           element.classList.remove('fa-angle-double-down');
@@ -110,47 +110,47 @@ window.addEventListener('load', function () {//Load Page first
 
   //When resize
   this.addEventListener('resize', function () {
-    
+
     afterpageLoaded();
 
     if (innerWidth <= 900) {
-            
-      if (nav.classList.contains('nav-mobile')) {//...Close nav-bar
-        
+
+      if (nav.classList.contains('nav-mobile')) { //...Close nav-bar
+
         nav.classList.remove('nav-mobile');
-        navIcon.style.left = 'calc(90% - 2rem)';//...Restore Nav Icon position
+        navIcon.style.left = 'calc(90% - 2rem)'; //...Restore Nav Icon position
         navIcon.style.opacity = '1';
 
       } else if (navCloseIcon.style.display === 'block') {
 
         navCloseIcon.style.display = 'none';
-  
-      } 
+
+      }
 
     }
 
   });
 
   //When Nav-icon is clicked
-  navIcon.addEventListener('click', function() {
+  navIcon.addEventListener('click', function () {
 
-      nav.classList.add('nav-mobile');// Add visibility to the nav bar
-      navCloseIcon.style.display = 'block';//Show close button on nav-bar
-      this.style.left = '100%';// Hide nav-bar icon
-      this.style.opacity = '0';
+    nav.classList.add('nav-mobile'); // Add visibility to the nav bar
+    navCloseIcon.style.display = 'block'; //Show close button on nav-bar
+    this.style.left = '100%'; // Hide nav-bar icon
+    this.style.opacity = '0';
 
   });
 
 
   //When a nav-bar item is clicked
-  navItems.forEach(function(item) {
+  navItems.forEach(function (item) {
 
-    item.addEventListener('click', function() {// Hide nav-bar when click on any list item
+    item.addEventListener('click', function () { // Hide nav-bar when click on any list item
 
       if (innerWidth <= 750) {
 
         nav.classList.remove('nav-mobile');
-        navIcon.style.left = 'calc(90% - 2rem)';// Show nav-bar icon back
+        navIcon.style.left = 'calc(90% - 2rem)'; // Show nav-bar icon back
         navIcon.style.opacity = '1';
 
       }
@@ -159,8 +159,7 @@ window.addEventListener('load', function () {//Load Page first
 
   });
 
-  var courses = [
-    {
+  var courses = [{
       title: 'Build Responsive Real World Websites',
       source: 'Udemy'
     },
@@ -204,7 +203,7 @@ window.addEventListener('load', function () {//Load Page first
   }
 
   //When click right arrow to the next course 
-  nextCourse.addEventListener('click', function() {
+  nextCourse.addEventListener('click', function () {
 
     currentImage++;
 
@@ -213,11 +212,11 @@ window.addEventListener('load', function () {//Load Page first
     }
 
     changeCourseInfo();
-    
+
   });
 
   //When click left arrow to the prevoius course 
-  previousCourse.addEventListener('click', function() {
+  previousCourse.addEventListener('click', function () {
 
     currentImage--;
 
@@ -226,7 +225,7 @@ window.addEventListener('load', function () {//Load Page first
     }
 
     changeCourseInfo();
-    
+
   });
 
   AOS.init();
