@@ -43,7 +43,7 @@
                 <p><span>Hello,</span> World!</p>
                 <p>My name is <span>Erick Jordan</span></p>
                 <p>I'm a <span>Front-End Web Developer</span></p>
-                <button><i class="fas fa-download"></i>Resume</button>
+                <button><a href="/docs/Erick Jordan-Resume.pdf" target="_blank"><i class="fas fa-download"></i>Resume</a></button>
             </div>
 
             <div class="header-image-container">
@@ -243,31 +243,41 @@
 
             <form action="/php/mailer.php" method="post" data-aos="fade-up">
 
-                <label for="contact-name">Name:</label>
+                <label for="contact-name">Name: <span>*</span></label>
                 <input type="text" name="name" id="contact-name" placeholder="Full Name" required>
-                <label for="contact-email">Email Address:</label>
+                <label for="contact-email">Email Address: <span>*</span></label>
                 <input type="email" name="email" id="contact-email" placeholder="username@domain.com" required>
-                <label for="contact-message">Message:</label>
+                <label for="contact-message">Message: <span>*</span></label>
                 <textarea name="message" id="contact-message" rows="10" placeholder="Your message" required></textarea>
                 <input type="submit" name="submit" value="Send Message">
 
             </form>
 
-            <p id="form"></p>
+            <?php
+
+            if($_GET['success'] == 1) {
+                echo "<p>Success</p>";
+            }
+           
+            if($_GET['success'] == -1) {
+                echo "<p>Error</p>";
+            }
+
+            ?>
 
         </section>
 
         <footer>
 
             <div>
-                <p>Stay Connected:</p>
+                <p>Stay Connected</p>
                 <a href="https://www.linkedin.com/in/erick-jordan/" target="_blank"><img src="img/Linkedin.svg" alt="Linkedin Icon"></a>
                 <a href="https://github.com/erixoalexandros" target="_blank"><img src="img/Github.svg" alt="Github Icon"></a>
                 <a href="https://www.meetup.com/members/234651146/" target="_blank"><img src="img/meetup.svg" alt="Meetup Icon"></a>
             </div>
             <div>
-                <p>Download my resume</p>
-                <i class="fas fa-download"></i>
+                <a href="/docs/Erick Jordan-Resume.pdf" target="_blank"> <p>Download my resume</p>
+                <i class="fas fa-download"></i></a>
             </div>
             <div>
                 <p>Designed and Coded by <a href="#wrapper">Erick Jordan</a></p>

@@ -72,6 +72,24 @@ nav ul,
 }
 
 a,
+.header-headings-container button,
+#contact input[type='submit'] {
+  cursor: pointer;
+}
+
+a:hover,
+.header-headings-container span,
+.education-boxes h3,
+#courses-carousel h3,
+#contact span,
+#nav-close-icon:hover,
+footer,
+footer a,
+footer a:visited {
+  color: #FFCA3A;
+}
+
+a,
 a:visited,
 nav,
 header,
@@ -83,23 +101,9 @@ header,
 #education h2,
 #nav-menu-icon,
 #contact form,
-#contact input[type='submit'] {
+#contact input[type='submit'],
+footer a:hover {
   color: #fff;
-}
-
-a,
-.header-headings-container button,
-#contact input[type='submit'] {
-  cursor: pointer;
-}
-
-a:hover,
-.header-headings-container span,
-.education-boxes h3,
-#courses-carousel h3,
-#nav-close-icon:hover,
-footer {
-  color: #FFCA3A;
 }
 
 h2,
@@ -837,6 +841,7 @@ footer img:last-child {
 }
 
 footer p {
+  display: inline;
   margin-right: 20px;
 }
 

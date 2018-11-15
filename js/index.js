@@ -196,7 +196,7 @@ window.addEventListener('load', function () { //Load Page first
   var currentImage = 0;
 
   function changeCourseInfo() {
-    courseImage.src = 'http://127.0.0.1:5500/img/Course-' + currentImage + '.jpg';
+    courseImage.src = 'img/Course-' + currentImage + '.jpg';
     courseTitle.textContent = courses[currentImage].title;
     courseSource.textContent = courses[currentImage].source;
     courseImage.alt = courses[currentImage].title + 'from' + courses[currentImage].source;
