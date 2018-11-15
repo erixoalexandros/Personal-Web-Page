@@ -35,7 +35,7 @@
   }
 
   .nav-fixed {
-    background-image: url('../img/bg-pattern2.png');
+    background-image: url('../img/bg-pattern.png');
     left: 100%;
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
@@ -43,7 +43,7 @@
   }
 
   .nav-fixed::before {
-    background-color: #0E476B;
+    background-color: #0e222d;
     content: "";
     height: 50px;
     left: -25px;
@@ -270,10 +270,6 @@
     height: 80px;
     left: 0;
     width: 100%;
-  }
-
-  .nav-fixed::before {
-    background-color: rgba(14, 71, 107, 0);
   }
 
   .nav-fixed:hover {
