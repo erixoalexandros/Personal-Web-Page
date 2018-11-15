@@ -241,7 +241,7 @@
 
             <h2>CONTACT</h2>
 
-            <form action="/php/mailer.php" method="post" data-aos="fade-up">
+            <form action="/php/mailer.php" method="post" id="form" data-aos="fade-up">
 
                 <label for="contact-name">Name: <span>*</span></label>
                 <input type="text" name="name" id="contact-name" placeholder="Full Name" required>
@@ -251,19 +251,19 @@
                 <textarea name="message" id="contact-message" rows="10" placeholder="Your message" required></textarea>
                 <input type="submit" name="submit" value="Send Message">
 
+                <?php
+
+                    if($_GET['success'] == 1) {
+                        echo "<p class='form-message form-success'>Thank you!</p>";
+                    }
+
+                    if($_GET['success'] == -1) {
+                        echo "<p class='form-message form-error'>Error!</p>";
+                    }
+
+                ?>
+
             </form>
-
-            <?php
-
-            if($_GET['success'] == 1) {
-                echo "<p>Success</p>";
-            }
-           
-            if($_GET['success'] == -1) {
-                echo "<p>Error</p>";
-            }
-
-            ?>
 
         </section>
 

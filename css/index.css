@@ -813,6 +813,46 @@ footer i {
   width: 150px;
 }
 
+.form-message {
+  animation: show-up 3s 0.5s;
+  align-items: center;
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.33);
+  display: flex;
+  height: 4rem;
+  font-size: 2.5rem;
+  justify-content: center;
+  left: calc(50% - 150px);
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 2rem);
+  visibility: hidden;
+  width: 300px;
+  z-index: 100;
+}
+
+@keyframes show-up {
+  0%, 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  25%, 75% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.form-success {
+  background-color: #8ac926ff;
+  color: #072233;
+}
+
+.form-error {
+  background-color: #FF595E;
+  color: #fff;
+}
+
 /* CONTACT END /////////////////////////////////////////////// */
 
 /* FOOTER /////////////////////////////////////////////// */
