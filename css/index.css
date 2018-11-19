@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Calibri, sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
@@ -67,9 +67,8 @@ nav ul,
   width: 80%;
 }
 
-.header-headings-container button,
-#courses-carousel i:hover,
-#contact input[type='submit'] {
+.red-btn,
+#courses-carousel i:hover {
   cursor: pointer;
 }
 
@@ -85,7 +84,7 @@ a:hover {
 a,
 nav,
 header,
-.header-headings-container button,
+.red-btn,
 #skills h2,
 .experience-box,
 .experience-three::before,
@@ -93,7 +92,6 @@ header,
 #education h2,
 #nav-menu-icon,
 #contact form,
-#contact input[type='submit'],
 .form-error,
 footer {
   color: #fff;
@@ -115,7 +113,7 @@ nav ul,
 header,
 .header-headings-container,
 .header-image-container,
-#about article,
+.about-main,
 #about span,
 #skills-container,
 .skills-card-back,
@@ -169,8 +167,7 @@ nav,
 .skills-card-back,
 .education-boxes i,
 #courses-carousel div,
-.experience-box::before,
-#contact input[type='submit'] {
+.experience-box::before {
   text-align: center;
 }
 
@@ -202,7 +199,7 @@ nav,
 }
 
 nav ul,
-#about article,
+.about-main,
 #about span,
 .experience-boxes,
 .nav-fixed,
@@ -313,7 +310,7 @@ footer::before {
   padding: 100px 0;
 }
 
-#about article,
+.about-main,
 .experience-boxes,
 #education,
 #courses-carousel {
@@ -321,7 +318,7 @@ footer::before {
   flex-wrap: wrap;
 }
 
-#about article,
+.about-main,
 #skills-container,
 .experience-boxes,
 .nav-fixed ul {
@@ -333,11 +330,6 @@ footer::before {
 .about-paragraphs-container p:last-child,
 .education-boxes div:last-child {
   margin-bottom: 0;
-}
-
-#about span,
-#courses-carousel-card p:last-child {
-  font-style: italic;
 }
 
 #about i,
@@ -414,8 +406,7 @@ footer::before {
 
 #contact-name,
 #contact-email,
-#contact-message,
-#contact input[type='submit'] {
+#contact-message {
   border: none;
 }
 
@@ -432,45 +423,16 @@ footer::before {
   width: 50%;
 }
 
-#contact input[type='submit'],
-.header-headings-container button,
+.red-btn,
 .experience-three::before,
 .form-error {
   background-color: #FF595E;
 }
 
-.header-headings-container button,
-#contact input[type='submit'] {
-  font-size: 1rem;
-}
-
-.header-headings-container button,
-#contact input[type='submit'] {
-  outline: none;
-}
-
-.header-headings-container button,
-#contact input[type='submit'] {
-  padding: 12px 24px;
-}
-
-.header-headings-container button,
-#contact input[type='submit'],
+.red-btn,
 .form-message {
   -webkit-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.33);
-}
-
-.header-headings-container button:active,
-#contact input[type='submit']:active {
-  -webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.33);
-}
-
-.header-headings-container button:active,
-#contact input[type='submit']:active {
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
 }
 
 nav,
@@ -525,8 +487,22 @@ header::after {
   margin-right: 10px;
 }
 
-.header-headings-container button {
+.red-btn {
   border: 0;
+  font-size: 1rem;
+  outline: none;
+  padding: 12px 24px;
+}
+
+.red-btn:hover {
+  color: #fff;
+}
+
+.red-btn:active {
+  -webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.33);
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .header-image-container {
@@ -543,7 +519,7 @@ header::after {
   height: 1050px;
 }
 
-#about article {
+.about-main {
   margin-bottom: 100px;
 }
 
@@ -552,6 +528,7 @@ header::after {
 }
 
 #about span {
+  font-style: italic;
   font-weight: 100;
 }
 
@@ -815,15 +792,13 @@ footer i {
 }
 
 #contact-message {
-  font-family: inherit;
+  font-family: sans-serif;
   resize: none;
 }
 
 #contact input[type='submit'] {
   -ms-flex-item-align: end;
   align-self: flex-end;
-  outline: none;
-  width: 150px;
 }
 
 .form-message {

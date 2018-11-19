@@ -38,11 +38,11 @@ window.addEventListener('load', function () { //Load Page first
   function pictureOrientation() { // Control picture orientation
 
     if (innerWidth <= 750 && innerWidth > 500) {
-      aboutPicture.src = 'img/me-landscape.png';
+      aboutPicture.src = 'img/me-landscape.jpg';
     } else if (innerWidth <= 500) {
-      aboutPicture.src = 'img/me-square.png';
+      aboutPicture.src = 'img/me-square.jpg';
     } else {
-      aboutPicture.src = 'img/me-portrait.png';
+      aboutPicture.src = 'img/me-portrait.jpg';
     }
 
   }
