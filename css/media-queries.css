@@ -418,6 +418,9 @@
 
   footer img {
     height: 30px;
+  }
+
+  footer a {
     margin-right: 10px;
   }
 
@@ -600,44 +603,44 @@
 
   .experience-one {
     -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    -ms-flex-order: 7;
+    order: 7;
   }
 
   .experience-two {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .experience-three {
     -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -ms-flex-order: 4;
+    order: 4;
   }
 
   .experience-four {
     -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    -ms-flex-order: 3;
+    order: 3;
   }
 
   .experience-five {
     -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    -ms-flex-order: 0;
+    order: 0;
   }
 
   .experience-six {
     -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    -ms-flex-order: 5;
+    order: 5;
   }
 
   .experience-seven {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .fa-angle-double-up {
@@ -719,7 +722,10 @@
 
   footer img {
     height: 30px;
-    margin-right: 10px;
+  }
+
+  footer a {
+    margin-right: 5px;
   }
 
   footer p {

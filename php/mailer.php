@@ -8,11 +8,11 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://erickjordan.com/index.php?success=-1#form");
+        header("Location: https://erickjordan.com/index.php?success=-1#form");
         exit;
     }
 
-    // Set the recipient email address. Update this to YOUR desired email address.
+    // Set the recipient email address.
     $recipient = "contact@erickjordan.com";
 
     // Set the email subject.
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: http://erickjordan.com/index.php?success=1#form");
+    header("Location: https://erickjordan.com/index.php?success=1#form");
 
 ?>

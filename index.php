@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Portfolio">
-    <meta name="description" content="">
+    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Portfolio, Personal Webpage">
+    <meta name="description" content="Front-End Web Developer based in Houston, TX. Focussed on web technologies. Following the route to become an expert web developer. Always bringing a positive and motivational attitude.">
     <meta name="author" content="Erick Jordan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -43,7 +43,7 @@
                 <p><span>Hello,</span> World!</p>
                 <p>My name is <span>Erick Jordan</span></p>
                 <p>I'm a <span>Front-End Web Developer</span></p>
-                <button><a href="/docs/Erick Jordan-Resume.pdf" target="_blank"><i class="fas fa-download"></i>Resume</a></button>
+                <a href="/docs/Erick-Jordan-Resume.pdf" target="_blank"><button><i class="fas fa-download"></i>Resume</button></a>
             </div>
 
             <div class="header-image-container">
@@ -63,11 +63,16 @@
                 </div>
 
                 <div class="about-paragraphs-container" data-aos="fade-up">
-                    <p>I enjoy developing websites. It’s very likely that I'm doing it while you're reading this; if not, there is a big chance that I'm learning something new but don't worry; I'm having fun, which is something cool, isn't it?</p>
+                    <p>I enjoy developing websites. It’s very likely that I'm doing it while you're reading this; if
+                        not, there is a big chance that I'm learning something new but don't worry; I'm having fun,
+                        which is something cool, isn't it?</p>
 
-                    <p>I'm focused on being a competent and savvy web developer. I spend many hours each day thinking on cool ideas to code, and on finding the most creative solutions.</p>
+                    <p>I'm focused on being a competent and savvy web developer. I spend many hours each day thinking
+                        on cool ideas to code, and on finding the most creative solutions.</p>
 
-                    <p>I like learning cutting-edge technology and the latest web standards. Also, I find extraordinary to work alongside other web developers to understand their vision, to share ideas and to see those ideas materialized.</p>
+                    <p>I like learning cutting-edge technology and the latest web standards. Also, I find extraordinary
+                        to work alongside other web developers to understand their vision, to share ideas and to see
+                        those ideas materialized.</p>
                 </div>
 
             </article>
@@ -145,7 +150,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>    
+            </div>
 
         </section>
 
@@ -276,8 +281,10 @@
                 <a href="https://www.meetup.com/members/234651146/" target="_blank"><img src="img/meetup.svg" alt="Meetup Icon"></a>
             </div>
             <div>
-                <a href="/docs/Erick Jordan-Resume.pdf" target="_blank"> <p>Download my resume</p>
-                <i class="fas fa-download"></i></a>
+                <a href="/docs/Erick-Jordan-Resume.pdf" target="_blank">
+                    <p>Download my resume</p>
+                    <i class="fas fa-download"></i>
+                </a>
             </div>
             <div>
                 <p>Designed and Coded by <a href="#wrapper">Erick Jordan</a></p>
@@ -291,7 +298,18 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129428651-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129428651-1');
+    </script>
+
 </body>
 
 </html>

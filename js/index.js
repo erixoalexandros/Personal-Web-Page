@@ -1,7 +1,6 @@
 'use strict';
 
 window.addEventListener('load', function () { //Load Page first
-
   //DOM LOADER/////////////////////////////////////////////
   var nav = document.getElementsByTagName('nav')[0];
   var navItems = Array.prototype.slice.call(nav.firstElementChild.children); //Convert node-list in an Array
@@ -196,10 +195,20 @@ window.addEventListener('load', function () { //Load Page first
   var currentImage = 0;
 
   function changeCourseInfo() {
+
     courseImage.src = 'img/Course-' + currentImage + '.jpg';
+
+    courseImage.style.animation = 'fadeIn .5s';
+
+    setTimeout(function () {
+
+      courseImage.style.animation = 'none';
+
+    }, 500);
+
     courseTitle.textContent = courses[currentImage].title;
     courseSource.textContent = courses[currentImage].source;
-    courseImage.alt = courses[currentImage].title + 'from' + courses[currentImage].source;
+    courseImage.alt = courses[currentImage].title + ' from ' + courses[currentImage].source;
   }
 
   //When click right arrow to the next course 
@@ -228,6 +237,30 @@ window.addEventListener('load', function () { //Load Page first
 
   });
 
+  // Run elements effect when scroll down the page
   AOS.init();
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
 });
