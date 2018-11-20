@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Portfolio, Personal Webpage">
-    <meta name="description" content="Front-End Web Developer based in Houston, TX. Focussed on web technologies. Following the route to become an expert web developer. Always bringing a positive and motivational attitude.">
+    <meta name="description" content="Front-End Web Developer based in Houston, TX. Focused on web technologies. Following the route to become an expert web developer. Always bringing a positive and motivational attitude.">
     <meta name="author" content="Erick Jordan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
