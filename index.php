@@ -2,13 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MKFBR5P');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129428651-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129428651-1');
+    </script>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Portfolio, Personal Webpage">
-    <meta name="description" content="Front-End Web Developer based in Houston, TX. Focused on web technologies. Following the route to become an expert web developer. Always bringing a positive and motivational attitude.">
+    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Personal Webpage">
+    <meta name="description" content="Front-End Web Developer based in Houston, TX. Always bringing a positive and motivational attitude.">
     <meta name="author" content="Erick Jordan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Erick Jordan</title>
+    <meta name="google-site-verification" content="UfnovFZtBhG-Ja_hDqVIcfvLC0t-hqjCKc-OQJ3HC4E" />
+    <title>Erick Jordan - Junior Web Developer</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/web-dev-animation.css">
@@ -23,6 +41,11 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKFBR5P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div id="wrapper">
 
@@ -42,7 +65,7 @@
             <div class="header-headings-container">
                 <p><span>Hello,</span> World!</p>
                 <p>My name is <span>Erick Jordan</span></p>
-                <p>I'm a <span>Front-End Web Developer</span></p>
+                <p>I'm a <span>Junior Web Developer</span></p>
                 <a href="/docs/Erick-Jordan-Resume.pdf" target="_blank" class="red-btn"><i class="fas fa-download"></i>Resume</a>
             </div>
 
@@ -63,12 +86,11 @@
                 </div>
 
                 <div class="about-paragraphs-container" data-aos="fade-up">
-                    <p>I enjoy developing websites. It’s very likely that I'm doing it while you're reading this; if
-                        not, there is a big chance that I'm learning something new but don't worry; I'm having fun,
-                        which is something cool, isn't it?</p>
+                    <p>I enjoy developing web applications. It’s very likely that I'm doing it while you're reading this; if
+                        not, there is a big chance that I'm learning new technologies, which is something cool, isn't it?</p>
 
                     <p>I'm focused on being a competent and savvy web developer. I spend many hours each day thinking
-                        on cool ideas to code, and on finding the most creative solutions.</p>
+                        on challenging ideas to code, and on finding the most creative solutions.</p>
 
                     <p>I like learning cutting-edge technology and the latest web standards. Also, I find extraordinary
                         to work alongside other web developers to understand their vision, to share ideas and to see
@@ -95,11 +117,26 @@
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
+                            <li>React</li>
                             <li>Bootstrap</li>
                             <li>jQuery</li>
-                            <li>Joomla</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
                             <li>JSON</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-card-wrapper" data-aos="fade-up">
+                    <div class="skills-card">
+                        <div class="skills-card-front skills-card-tools"></div>
+                        <ul class="skills-card-back">
                             <li>SEO</li>
+                            <li>Git / GitHub</li>
+                            <li>Command Line</li>
+                            <li>NPM</li>
+                            <li>FTP</li>
+                            <li>Linux</li>
                             <li>Google Analytics</li>
                         </ul>
                     </div>
@@ -123,22 +160,6 @@
 
                 <div class="skills-card-wrapper" data-aos="fade-up">
                     <div class="skills-card">
-                        <div class="skills-card-front skills-card-tools"></div>
-                        <ul class="skills-card-back">
-                            <li>Git / GitHub</li>
-                            <li>Command Line</li>
-                            <li>FTP</li>
-                            <li>Linux</li>
-                            <li>VMWare</li>
-                            <li>Server Admin</li>
-                            <li>Networking</li>
-                            <li>Kanban Method</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skills-card-wrapper" data-aos="fade-up">
-                    <div class="skills-card">
                         <div class="skills-card-front skills-card-personal"></div>
                         <ul class="skills-card-back">
                             <li>Creative</li>
@@ -147,6 +168,7 @@
                             <li>Problem-Solver</li>
                             <li>Self-Confidence</li>
                             <li>Positive</li>
+                            <li>Bilingual</li>
                         </ul>
                     </div>
                 </div>
@@ -288,7 +310,7 @@
             </div>
             <div>
                 <p>Designed and Coded by <a href="#wrapper">Erick Jordan</a></p>
-                <span>2018</span>
+                <span><?php echo date('Y') ?></span>
             </div>
 
         </footer>
@@ -300,15 +322,6 @@
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129428651-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-129428651-1');
-    </script>
 
 </body>
 

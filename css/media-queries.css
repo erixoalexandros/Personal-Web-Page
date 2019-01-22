@@ -773,14 +773,6 @@
     margin-bottom: 60px;
   }
 
-  .header-headings-container p:first-of-type {
-    font-size: 1.75rem;
-  }
-
-  .header-headings-container p:last-of-type {
-    font-size: 1.25rem;
-  }
-
   .red-btn {
     padding: 12px 20px;
   }
