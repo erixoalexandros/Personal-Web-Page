@@ -2,31 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MKFBR5P');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129428651-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-129428651-1');
-    </script>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Spanish Speaker, Junior Web Developer, Bachelor Degree, Personal Webpage">
-    <meta name="description" content="Front-End Web Developer based in Houston, TX. Always bringing a positive and motivational attitude.">
+    <meta name="keywords" content="Erick Jordan, Web Developer, Houston, Front End Web Developer, JavaScript Developer, Resume, Developer, Bachelor Degree Personal Webpage, Porfolio">
+    <meta name="description" content="Web Developer based in Houston, TX. Always bringing a positive and motivational attitude.">
     <meta name="author" content="Erick Jordan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="UfnovFZtBhG-Ja_hDqVIcfvLC0t-hqjCKc-OQJ3HC4E" />
-    <title>Erick Jordan - Junior Web Developer</title>
+    <title>Erick Jordan - Web Developer</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/web-dev-animation.css">
@@ -41,12 +24,6 @@
 </head>
 
 <body>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKFBR5P"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div id="wrapper">
 
         <nav>
@@ -65,8 +42,8 @@
             <div class="header-headings-container">
                 <p><span>Hello,</span> World!</p>
                 <p>My name is <span>Erick Jordan</span></p>
-                <p>I'm a <span>Junior Web Developer</span></p>
-                <a href="/docs/Erick-Jordan-Resume.pdf" target="_blank" class="red-btn"><i class="fas fa-download"></i>Resume</a>
+                <p>I'm a <span>Web Developer</span></p>
+                <a href="" target="_blank" class="red-btn"><i class="fas fa-download"></i>Resume</a>
             </div>
 
             <div class="header-image-container">
@@ -86,15 +63,11 @@
                 </div>
 
                 <div class="about-paragraphs-container" data-aos="fade-up">
-                    <p>I enjoy developing web applications. It’s very likely that I'm doing it while you're reading this; if
-                        not, there is a big chance that I'm learning new technologies, which is something cool, isn't it?</p>
+                    <p>Focused on being a competent and savvy full-stack web developer, seeking to grow professionally and determined to accept the challenge.</p>
 
-                    <p>I'm focused on being a competent and savvy web developer. I spend many hours each day thinking
-                        on challenging ideas to code, and on finding the most creative solutions.</p>
+                    <p>I’m enjoying the process and I’m eager to apply the knowledge acquired. I find extraordinary to work alongside other web developers, understand their vision and sharing ideas to see those ideas materialized.</p>
 
-                    <p>I like learning cutting-edge technology and the latest web standards. Also, I find extraordinary
-                        to work alongside other web developers to understand their vision, to share ideas and to see
-                        those ideas materialized.</p>
+                    <p>Being a strongly positive person who enjoys encouraging and motivating others makes each step taken more satisfying. The key to success is trusting in yourself and embracing change.</p>
                 </div>
 
             </div>
@@ -120,9 +93,7 @@
                             <li>React</li>
                             <li>Bootstrap</li>
                             <li>jQuery</li>
-                            <li>PHP</li>
                             <li>MySQL</li>
-                            <li>JSON</li>
                         </ul>
                     </div>
                 </div>
@@ -131,11 +102,11 @@
                     <div class="skills-card">
                         <div class="skills-card-front skills-card-tools"></div>
                         <ul class="skills-card-back">
-                            <li>SEO</li>
                             <li>Git / GitHub</li>
-                            <li>Command Line</li>
+                            <li>Terminal</li>
                             <li>NPM</li>
-                            <li>FTP</li>
+                            <li>SEO</li>
+                            <li>Browser Webtools</li>
                             <li>Linux</li>
                             <li>Google Analytics</li>
                         </ul>
@@ -146,14 +117,13 @@
                     <div class="skills-card">
                         <div class="skills-card-front skills-card-graphics"></div>
                         <ul class="skills-card-back">
+                            <li>Responsive Web</li>
+                            <li>Mobile First</li>
                             <li>Photoshop</li>
                             <li>GIMP</li>
                             <li>Inkscape</li>
                             <li>CorelDRAW</li>
                             <li>Google Drawings</li>
-                            <li>Flash</li>
-                            <li>Invision</li>
-                            <li>Premiere</li>
                         </ul>
                     </div>
                 </div>
@@ -162,13 +132,13 @@
                     <div class="skills-card">
                         <div class="skills-card-front skills-card-personal"></div>
                         <ul class="skills-card-back">
-                            <li>Creative</li>
                             <li>Self / Fast Learner</li>
-                            <li>Team Player</li>
-                            <li>Problem-Solver</li>
+                            <li>Teamwork</li>
+                            <li>Problem-Solving</li>
                             <li>Self-Confidence</li>
                             <li>Positive</li>
-                            <li>Bilingual</li>
+                            <li>Customer Service</li>
+                            <li>Bilingual (Eng-Spa)</li>
                         </ul>
                     </div>
                 </div>
@@ -318,7 +288,9 @@
         <i id="nav-menu-icon" class="fas fa-bars"></i>
 
     </div>
-
+    <script>
+        document.getElementById('form').addEventListener('submit', (e) => e.preventDefault());
+    </script>
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
